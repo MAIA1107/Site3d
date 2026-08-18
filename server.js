@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const BASE_DIR = __dirname;
 const HTML_PATH = path.join(BASE_DIR, 'index.html');
 const CONFIG_PATH = path.join(BASE_DIR, 'colecoes.json');
-const REBUILD_SCRIPT = path.join(BASE_DIR, 'atualizar.ps1');
+const REBUILD_SCRIPT = path.join(BASE_DIR, 'rebuild.js');
 const UPLOADS_DIR = path.join(BASE_DIR, 'uploads');
 
 const SCRIPT_INJECT = '<script>window.__SERVER__=true</script>';
@@ -196,14 +196,17 @@ const server = http.createServer((req, res) => {
       return;
     }
 
-    if (req.method === 'POST' && req.url === '/api/rebuild') {
+    if (req.method === 'POST' && req.url.startsWith('/api/rebuild')) {
       if (rebuildState.running) {
         sendJson(res, 200, { ok: true, message: 'Rebuild already in progress' });
         return;
       }
+      const urlObj = new URL(req.url, `http://${req.headers.host}`);
+      const refresh = urlObj.searchParams.get('refresh') === '1';
+      const args = [REBUILD_SCRIPT];
+      if (refresh) args.push('--refresh');
       rebuildState = { running: true, output: '', exitCode: null, done: false };
-      const shell = process.platform === 'win32' ? 'powershell.exe' : 'pwsh';
-      const child = spawn(shell, ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', REBUILD_SCRIPT], {
+      const child = spawn(process.execPath, args, {
         cwd: BASE_DIR,
         windowsHide: true,
       });
