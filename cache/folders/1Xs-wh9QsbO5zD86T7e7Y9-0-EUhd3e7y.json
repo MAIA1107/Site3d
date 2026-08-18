@@ -1,0 +1,46 @@
+﻿{
+    "label":  "Coup� AMG GT 63",
+    "id":  "1Xs-wh9QsbO5zD86T7e7Y9-0-EUhd3e7y",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "DSC01264.JPG",
+                      "id":  "1AMl8qz3sLf8AgQ_CljTWFOnmr58gUkgQ"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_20241120_215617.jpg",
+                      "id":  "1yagiXzjf4R43LiQWt7KV1Nj5MLbFZs4Z"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_20241124_184555.jpg",
+                      "id":  "1moY6QwY8ryFlkCzxnw7Agvus_pL4XM8g"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "AMG GT 63 Body STL Files.zip",
+                      "id":  "1S9cUQIl_Eri_aHMg8si5yBxS4icqxLvU"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Display Chassis.3mf",
+                      "id":  "1TYx4vGJVBiRVZN1d8ZgoOgchZYlTfoXQ"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Display_Chassis_Step.zip",
+                      "id":  "19koEqJbEEvvFmzcwf2vibeKqMuHoOhJW"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "RC Chassis.zip",
+                      "id":  "1RmsfMAiSg__FKxmrbLy7lbSm2HjLTIUY"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Lights.zip",
+                      "id":  "19G2g6DSpPeT25LI7zSzjlkMFRAFUujWU"
+                  }
+              ]
+}

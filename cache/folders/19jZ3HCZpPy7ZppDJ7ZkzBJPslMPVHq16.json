@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Bust M. Bison - Street Fighter ",
+    "id":  "19jZ3HCZpPy7ZppDJ7ZkzBJPslMPVHq16",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Bison.jpg",
+                      "id":  "1AWWZZjkWnFSJqJaV6RD1Enq3KtbFOc8P",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1BDgZeupb_mwJXfXee8PEHD8VtaHbmIfR",
+                      "type":  "FILE"
+                  }
+              ]
+}

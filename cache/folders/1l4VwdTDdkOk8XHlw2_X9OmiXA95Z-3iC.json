@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Pacote de Chaveiros Poke-Monstro ",
+    "id":  "1l4VwdTDdkOk8XHlw2_X9OmiXA95Z-3iC",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "d6692801a5d0efd0.webp",
+                      "id":  "1bO9DJ4C8Mx527XOyRB-VkqkLyiemnQRR",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Pokemon_Keychain_Pack_043_v002_stls.zip",
+                      "id":  "1ksjc6gY_MTreNLTbw4wYqMdsafA5g5CN",
+                      "type":  "FILE"
+                  }
+              ]
+}

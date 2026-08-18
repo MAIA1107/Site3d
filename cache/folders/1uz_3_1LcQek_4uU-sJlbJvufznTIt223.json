@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Algema com Chave",
+    "id":  "1uz_3_1LcQek_4uU-sJlbJvufznTIt223",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.png",
+                      "id":  "1vJMO9gQ88ID9IXK2fkeo0stNd77VUW7c",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1WmTqMl_RLxx0Ccp8LJ5gaxE1XfZ_y-xq",
+                      "type":  "FILE"
+                  }
+              ]
+}

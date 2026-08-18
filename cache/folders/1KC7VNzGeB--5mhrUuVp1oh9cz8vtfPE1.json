@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Triceratops",
+    "id":  "1KC7VNzGeB--5mhrUuVp1oh9cz8vtfPE1",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Articulated Triceratops.jpg",
+                      "id":  "1W2VOGoWBiP6ULc5wz_UTCXTW4jHQJqQ3"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1TzrWM5JtJ64x3cOVptbGqcJq3ainY0ZI"
+                  }
+              ]
+}

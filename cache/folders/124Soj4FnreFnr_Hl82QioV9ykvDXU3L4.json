@@ -1,0 +1,21 @@
+﻿{
+    "label":  "Tractor - Ferguson TE20 - Fully printable kit",
+    "id":  "124Soj4FnreFnr_Hl82QioV9ykvDXU3L4",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_1053.jpg",
+                      "id":  "1NaMZLTz4riFFsohp9XAPZzP3wDBbxa0E"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_1060.jpg",
+                      "id":  "11rP3dC6k2x3gRCSCWVpwGhVm5PKKPwso"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1db1JdiCol0Eg_BGQNsyzxMMCOT5EG4Um"
+                  }
+              ]
+}

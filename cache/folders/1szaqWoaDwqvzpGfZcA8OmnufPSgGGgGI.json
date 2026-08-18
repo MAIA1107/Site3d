@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Chaveiro São Paulo ",
+    "id":  "1szaqWoaDwqvzpGfZcA8OmnufPSgGGgGI",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2024-08-25_4645e564e00d3.webp",
+                      "id":  "19_yLL3jc0c9aPtyifrLMjiW4Lb_a8taf",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "São+Paulo+F.C..zip",
+                      "id":  "1mZiaDsm0_7xGMuAie8c4arkJIm9GsiOk",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Waddles Piggy Bank",
+    "id":  "1GUvLDoeWmP1m8VYKj9i6Bv0E5QHaCm4F",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1heBforA35VFsW8GDI0SkaCkSr1623ypA",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1SkY45QyTr9Wku8owGK0_c7vKBADjyiwf",
+                      "type":  "FILE"
+                  }
+              ]
+}

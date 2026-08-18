@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Collapsing Katana",
+    "id":  "1eslbA3rlq0skbqCbeGwa9uf_3Ii2bwJB",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.webp",
+                      "id":  "11l2SZCQmDVwh_nQZRXa9c0YXYvMWcxjV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1XiUNHtTMP7CrPgv-zLJQ5ZrtVuIJS9AZ",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "colecoes-3d",
+  "version": "1.0.0",
+  "description": "Galeria de coleções 3D com gerenciamento via web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

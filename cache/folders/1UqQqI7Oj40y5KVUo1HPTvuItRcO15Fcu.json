@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Crocodilo Gigante Articulado",
+    "id":  "1UqQqI7Oj40y5KVUo1HPTvuItRcO15Fcu",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "crocodile.jpg",
+                      "id":  "1Wv8zGEzRrl9TgktUMO3mVOS2J1pcQzi7"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "14jel5ObwKW-V2P7470a-1ea9P0JF3ltX"
+                  }
+              ]
+}

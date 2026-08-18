@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Russian Tank T90",
+    "id":  "13Q3KmtRSESq2p8PM0Uh0LG2KHpDLBgsT",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2022-01-13_20-28-21.jpg",
+                      "id":  "1aengX-nwh3grI9ZA69-1e6v3PaGawOqx"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "12w6UgNeJS97oRNzKvItRO4oDCmI1dPak"
+                  }
+              ]
+}

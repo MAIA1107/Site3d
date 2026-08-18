@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Arm Fully Printable",
+    "id":  "1z1jrzrxQQUr6FrW1o-R6w2ZVY1qsh9X7",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "articulating-arm.webp",
+                      "id":  "1Sou77m-W1ZkwWUcWfJYrfq800c_VbG5w"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1zn-7sc_g39-HoarCj5FPwcrTl-Zx770E"
+                  }
+              ]
+}

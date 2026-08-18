@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Jogo Dominó",
+    "id":  "1Ct5HNLaVp3RP89xOPlwC4o6IRRH6AJi2",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-01-26_21-19-47.jpg",
+                      "id":  "1rFl4EFdDxk-CtxwGYIC-Xx1sIscFGBpZ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1gbEsVzBazk0jRErfdscpsZfA0FQGPahN",
+                      "type":  "FILE"
+                  }
+              ]
+}

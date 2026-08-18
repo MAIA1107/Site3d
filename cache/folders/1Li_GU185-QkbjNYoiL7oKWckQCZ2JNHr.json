@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Vov� Scrooge Picsou em m�ltiplas partes, sem AMS",
+    "id":  "1Li_GU185-QkbjNYoiL7oKWckQCZ2JNHr",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_4937.jpg",
+                      "id":  "1_whUGsuWOUkcjODh-WupgtDsyM3CAlYY"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PICSOU+multipart_stls.zip",
+                      "id":  "1kKg9gnIJzp9sxw9n5XI6kL7cQ6jMGPlK"
+                  }
+              ]
+}

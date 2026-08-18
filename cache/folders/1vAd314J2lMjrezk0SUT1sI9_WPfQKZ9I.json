@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Flexi Dinos - Flexi Factory",
+    "id":  "1vAd314J2lMjrezk0SUT1sI9_WPfQKZ9I",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Flexi Factory - print in place - all three Flexi Dinos.jpg",
+                      "id":  "1gFkMnEQtYLDW8_rzPDCMkjyKcjVfuH6Z"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1oQM8nIKLWjTZfwY40jDkZSVhwtBSzvmG"
+                  }
+              ]
+}

@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Hydra Mythical Snake Creature",
+    "id":  "1J6CSMx5msqUvT8BtPfFZ9H5NhasijIcu",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Articulated Hydra Mythical Snake Creature.webp",
+                      "id":  "1YSfF4gPz37sJ4iGFVdMAbYRwVtIdxln9"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1O4nkHBg47gBr2rlRTZ5hxBuB8nHJBCY7"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Giraffe ",
+    "id":  "16-iQ36r_qujXRYLrCrJbK8KUV_C_MH2S",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Animals - Giraffe.jpg",
+                      "id":  "1ZU6IHDsBu0apVynK0NUSwLBPP8Hv7C5d",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "giraffe001.rar",
+                      "id":  "1LIzeoPou9MaAAW4G7BiUEshuptiUK2wV",
+                      "type":  "FILE"
+                  }
+              ]
+}

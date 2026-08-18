@@ -1,0 +1,41 @@
+﻿{
+    "label":  "Lamp Retro E27",
+    "id":  "1rnQHMSH-ehiwnHAgOKqeFAnPGoxmkVcp",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2025-04-02_35c65e78d26.webp",
+                      "id":  "1SUFYOKl3q1YRVO-0lC1IdA8RILNPUaqY"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-04-02_a471af06f0aa.webp",
+                      "id":  "1kP7zZqo4RDWOpu8dX-PkAZUFtj3y5ciK"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-04-02_d49a2a925de65.webp",
+                      "id":  "1WtsCBe4zZwsc6KyIEbBJMFA2wGDq49Bx"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Abdeckung_Index-3.STL Unknown",
+                      "id":  "1YydQVXBNa758E-iPBrCKTNCm9x0lE-LT"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Lampe-Retro_E27.STEP Binary",
+                      "id":  "1OH_7v0hiVWj5iqJlfas2Zrcy4K7M4zYS"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Lampensockel-Zackenlampe-angepasst_Oberteil-E27.STL Unknown",
+                      "id":  "19F7HiCAlHfyajFrpfUvW1-PEjK_K4P4V"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Lampensockel-Zackenlampe-angepasst-Unterteil_Retro-E27.STL Unknown",
+                      "id":  "1w0ph9wOFpdffH5h9L-FuZSXYwZdMdi5i"
+                  }
+              ]
+}

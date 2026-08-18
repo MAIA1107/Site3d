@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Modelador de Pastel",
+    "id":  "1Zlza8htR8ELy4ASW0Pg-3Zkw1A1HIKFT",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_20190727_203113_892.jpg",
+                      "id":  "1lHqouEBu6MfJNvn-RK7mb3FhQ5OcbITE",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "pie maker.STL Unknown",
+                      "id":  "1toVGZXfjPmwaof8O2vUP_pyjaNtGZA4_",
+                      "type":  "FILE"
+                  }
+              ]
+}

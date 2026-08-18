@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Chaveiro Cruzeiro ",
+    "id":  "1Dw3LrX-OpcrL1rLuvXf7Yd-JXfwLEnHp",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2024-08-27_b7f62bb3d53c1.webp",
+                      "id":  "18pi9poEBuqjEJcCjty92xI-fAl2tvj3q",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Cruzeiro.zip",
+                      "id":  "16d0nnePMfLTVvQZiCs2zpJhZBZgKkpO_",
+                      "type":  "FILE"
+                  }
+              ]
+}

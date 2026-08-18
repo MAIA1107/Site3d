@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Space Shuttle",
+    "id":  "1-e-L4Em-IEzpBRz4IIuJF5OTjAyZdT-8",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1FcOyHGd6UiELGS4NeqJmNiXdmiua07Hk",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1gSMr5y5c0JHbjmOrsSJMhbmuC5ymrA8S",
+                      "type":  "FILE"
+                  }
+              ]
+}

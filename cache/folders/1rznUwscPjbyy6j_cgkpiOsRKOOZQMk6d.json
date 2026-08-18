@@ -1,0 +1,41 @@
+﻿{
+    "label":  "Cream Lamp",
+    "id":  "1rznUwscPjbyy6j_cgkpiOsRKOOZQMk6d",
+    "items":  [
+                  {
+                      "mime":  "",
+                      "name":  ".DS_Store Binary",
+                      "id":  "1FB_Q1nAyOLLlLj_XTFrvH-xkPc7nLwL0"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-01_6ededbf5cf51c.webp",
+                      "id":  "1AvjyDDFAfaSkTvC_E8-Z3eaILw-dU3kU"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-01_07d2fc2ecf5ac8.webp",
+                      "id":  "1G8KN5DDnFJlbyfztVX_tJpRWvkW4jdUx"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-01_76a53125b440d.webp",
+                      "id":  "1RG9YWtvpBkp0CJrxN9GSnv_VTogo5ACb"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "obj_1_Vase Draft.3mf.stl Unknown",
+                      "id":  "1EYMMs-LCYA-hNoyxPA6i68VZ0kZJgBOn"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "obj_2_Lamp Base.stl Unknown",
+                      "id":  "1YtAl4cJLCeNec34dOJ2y04o2_sxVv5Ay"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "obj_3_Lamp Base.stl Unknown",
+                      "id":  "1tU81M-VZNuRRainKVRfy4bjt7e5nVN1F"
+                  }
+              ]
+}

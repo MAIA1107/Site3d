@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Capirava ",
+    "id":  "1Ve4xOCwbBx-CTf4zcsSewNIhTqZUd8RX",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1087902_cute-mini-capybara_cover.jpg",
+                      "id":  "1PrzfoThb83icg3UzBiHEdNO8tXTRKiCp",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Capy_stls.zip",
+                      "id":  "1KXMpAmuiHa8PTXd2eEiRiDZmqvxids9-",
+                      "type":  "FILE"
+                  }
+              ]
+}

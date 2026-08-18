@@ -1,0 +1,21 @@
+﻿{
+    "label":  "Articulated Dragon - Cults3D",
+    "id":  "1ZUOOrHqQe-uZK_PaOXde4U1jkY--fWWs",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2022-01-16_18-31-06.jpg",
+                      "id":  "1OcRUw__amEbSJxYsL3UykVFAuEG_7UEJ"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2022-01-16_18-34-54.jpg",
+                      "id":  "1XYjByB-cMzf6B_poCIlaqr5rRh-YCGB6"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1EB7xX1sXw4XkfySCXB_J_d-zK6iEExS0"
+                  }
+              ]
+}

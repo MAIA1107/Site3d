@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Chaveiro Internacional ",
+    "id":  "1mxIMGtk0AoDPbXNV3cj0e1R5V2yX2y9A",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2024-08-24_7409079427c14.webp",
+                      "id":  "1_m5NL_ac6I98Hvy6uuF1DvM6mBGHyBj0",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Internacional+.zip",
+                      "id":  "1LARXxziKiCxEZe14-WMqfRbE-oy8wXFO",
+                      "type":  "FILE"
+                  }
+              ]
+}

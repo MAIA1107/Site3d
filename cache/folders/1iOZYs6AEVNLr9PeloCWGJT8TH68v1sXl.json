@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Octopus Plush by BODY3D",
+    "id":  "1iOZYs6AEVNLr9PeloCWGJT8TH68v1sXl",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1Lj21zFEhirgf7HrUql0S74cPTNimeNRU"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1i49VqulHh09_pzqkMsMVC23WLcguUMRE"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Ferramentas encadernação",
+    "id":  "1ZIsv5vDOZon7UbUBrC-mUXFYsPVjIhO8",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2025-01-20_aaffac4eaac27.webp",
+                      "id":  "1MQmnbeGOzp2QcBIoxKlBYs3fbG7Mn-tX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Bookbinding+Tools.zip",
+                      "id":  "1u5KmnIFEnSBYj4dm8ngsa9ovIRQbmLfi",
+                      "type":  "FILE"
+                  }
+              ]
+}

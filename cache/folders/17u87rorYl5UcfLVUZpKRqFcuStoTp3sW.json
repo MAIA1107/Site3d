@@ -1,0 +1,48 @@
+﻿{
+    "label":  "Guarda Parafusos",
+    "id":  "17u87rorYl5UcfLVUZpKRqFcuStoTp3sW",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "m3Sorter_Gridfinitiy.gif",
+                      "id":  "1QlFWDtr2dZTZRqf5Vv3GojnmnHU_AqGa",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "m3Sorter_04_mini_gridfinity.3mf",
+                      "id":  "1JQehTqOX66MO22f-P5w3lHefezAmAZoG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "m3Sorter_04_mini.3mf",
+                      "id":  "1dYSYTHn7zSn-4uWL3pJ1IgeGzt3YD1Yv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "m3Sorter_bottom_gridfinity.stl Unknown",
+                      "id":  "1zCHhBtbyRvQI8lZr3nvipauQvx6O85Gn",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "m3Sorter_bottom.stl Unknown",
+                      "id":  "19DvrugNi6EkKoJbTWonZwAFaPouQe-JG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "m3Sorter_top_gridfinity.stl Unknown",
+                      "id":  "1srWOjB1HXY4eFjKzXv4-smiYOeX1hPgs",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "m3Sorter_top.stl Unknown",
+                      "id":  "1IgBfxKaQkUaPR6pUg7ccZJthy-SkQjv4",
+                      "type":  "FILE"
+                  }
+              ]
+}

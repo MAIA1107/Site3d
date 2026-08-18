@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Homem Formiga ",
+    "id":  "1HMH3e3fA1lA14tkp7j-AbVR5UZ9ryCXJ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1JlA9sR13JSVMhFDSn_UiCYOVLsud9_HT",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "14xucS83qAvK9udbF3ryi57acZ4HJ9EfM",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1arlvCZUV8t8ubYrsB2ZExsF20VPKqapN",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms1_AntMan_Rev1.rar",
+                      "id":  "1aJ3PFHNi20IghjY8VHiC4yb8BKYJWbnv",
+                      "type":  "FILE"
+                  }
+              ]
+}

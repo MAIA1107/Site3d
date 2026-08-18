@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Jimi Hendrix Bust ",
+    "id":  "140jZ_3o_ObKPp3EkdggDOl0eyOijuf_p",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1FQXEHUsDgdALZPAbvdkXQ5K4iuhLkyoy",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "jimi-hendrix-bust.rar",
+                      "id":  "1XiL4vonUDt37aI9W3S3suaL8GDNvVZMK",
+                      "type":  "FILE"
+                  }
+              ]
+}

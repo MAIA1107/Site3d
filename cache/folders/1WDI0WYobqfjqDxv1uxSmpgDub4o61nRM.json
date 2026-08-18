@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Ragnar ",
+    "id":  "1WDI0WYobqfjqDxv1uxSmpgDub4o61nRM",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1bVZtKNVpLrk0f_HzBJr7jfwqIFDvxcV8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "ragnar-lothbrok-1.rar",
+                      "id":  "12bi2yOa2xc9cTWj30yZY1r0ycJJYQP0s",
+                      "type":  "FILE"
+                  }
+              ]
+}

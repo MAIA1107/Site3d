@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Skulldroid",
+    "id":  "1EVbjyuUd4FSDi6ctBQ0ae5xJffQiIQrP",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1GpsfBVfxupBeFPbO50NbjeG95B0QO7ln"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "11E6X5ilRx7QEE8wcn1SyA5eXRef2MZWr"
+                  }
+              ]
+}

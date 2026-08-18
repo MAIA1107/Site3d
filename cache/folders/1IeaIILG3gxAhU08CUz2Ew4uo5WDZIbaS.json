@@ -1,0 +1,42 @@
+﻿{
+    "label":  "Lithophane Lamp E27",
+    "id":  "1IeaIILG3gxAhU08CUz2Ew4uo5WDZIbaS",
+    "items":  [
+                  {
+                      "mime":  "",
+                      "name":  ".DS_Store Binary",
+                      "id":  "19wTukNbhxhCKJrO0F_JucNaLYCaxd-TB",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-03-29_13936d58bb5b8.webp",
+                      "id":  "1ElI7Ek2B931CGf5GOuTAljIurHAV3SO8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-03-29_d1059c382e7cb.webp",
+                      "id":  "1-BPpyntbWBOXwh_Dru7Pezk4FQy23djJ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-27_37a2798571c2c.webp",
+                      "id":  "1FDFbRgNny2TY1UlK-VxvbaGh73daU9Zg",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Deckel Abdeckung-Klein-Körper.stl Unknown",
+                      "id":  "1XYmo3siOvdSNSHXdXiNRdsCsjXvx65Y_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Ständer untenV5-Körper.stl Unknown",
+                      "id":  "1QWuBSJvmIdAmLZTw1Zg66uHtMiIOzZT4",
+                      "type":  "FILE"
+                  }
+              ]
+}

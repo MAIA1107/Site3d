@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Spider Man ",
+    "id":  "1b7dhWD_8lLpCCIrkhv0TqXCm59BjakQx",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).png",
+                      "id":  "1a8_V-FuT51C8-LuSuPGXfAPZYeyw_5mo",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).png",
+                      "id":  "12VMYgpcn0p-EYlUa6e3SR5KfenBKQdf5",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).png",
+                      "id":  "1MTbmnu_hg15QTsYaky97YmVkwRTzDVrD",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1wqEIxcv-zLElnD5SszJcyaHUZ-RvG-Cp",
+                      "type":  "FILE"
+                  }
+              ]
+}

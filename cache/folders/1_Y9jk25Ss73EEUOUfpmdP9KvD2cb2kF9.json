@@ -1,0 +1,48 @@
+﻿{
+    "label":  "Skyward Sword Switch",
+    "id":  "1_Y9jk25Ss73EEUOUfpmdP9KvD2cb2kF9",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_20210706_232813_1_1_1_1_1_1.jpg",
+                      "id":  "1IPrMCM7wQqaRsd5bH8nIMkGyJCoLVy5_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "skyward-sword-switch-accessories-01.jpg",
+                      "id":  "1rafDlqrxUkfLfhWpmfN4P4jTCf5UfuCT",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "skyward-sword-switch-accessories-02.jpg",
+                      "id":  "16cikloQRjRx1bfB_az4GQ3V6GhwkA-Ke",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "skyward-sword-switch-accessories-03.jpg",
+                      "id":  "1TgSdvZOOADjBWxeDnqc5ZDC3fnSJMcuu",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "skyward-sword-switch-accessories-04.jpg",
+                      "id":  "1WJ4n8hbHU1zGTDz-y0KQ0UnXtmdlJxKV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "skyward-sword-switch-accessories-05.jpg",
+                      "id":  "1jq_zJdvLY_jjrxHdeww0TxLLg2xnCJ86",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1HvParhn33I168M-KebADi0ZUli5_9bus",
+                      "type":  "FILE"
+                  }
+              ]
+}

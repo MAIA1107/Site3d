@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Foldable Rhino",
+    "id":  "1MX5IDNx2S1WojOU251BkwF6NwABjKg5O",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Foldable Rhino.jpg",
+                      "id":  "1f6tL68AonAmzJRFFPDVVw3MDzOwWxWtF",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "foldable_rhino.rar",
+                      "id":  "1kMZqzrvOHFdLod4CJ3vrA2zVfQPW5nvH",
+                      "type":  "FILE"
+                  }
+              ]
+}

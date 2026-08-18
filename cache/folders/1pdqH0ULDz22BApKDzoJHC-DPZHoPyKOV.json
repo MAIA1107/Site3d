@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Quetzalco Dragon",
+    "id":  "1pdqH0ULDz22BApKDzoJHC-DPZHoPyKOV",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1NEWWjr_GxIFiNdNAKxjjA-XOwRVPbNjk"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "12l0s8DrwQu4hbVZRMCARKsUET1ZkNfHd"
+                  }
+              ]
+}

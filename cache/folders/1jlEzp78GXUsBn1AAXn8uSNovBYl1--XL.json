@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Capitão Caverna ",
+    "id":  "1jlEzp78GXUsBn1AAXn8uSNovBYl1--XL",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jfif",
+                      "id":  "1H-VtgbjgRXWRZpSk2qqQwgG-3I4kRX0D",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1l-Gbk_O7MOdgaLCmx9xNpO4xQ8K3gKtc",
+                      "type":  "FILE"
+                  }
+              ]
+}

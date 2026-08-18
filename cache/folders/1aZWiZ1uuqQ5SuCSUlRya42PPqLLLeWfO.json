@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Ford MUSTANG 1967",
+    "id":  "1aZWiZ1uuqQ5SuCSUlRya42PPqLLLeWfO",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-10-05_10-58-55.jpg",
+                      "id":  "12xHbd5v-hx5IIUePnNagwAglzGgx-4-P"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1Z_9IotXE_Z2WaDiCRWFvfnaW4FMFVaGa"
+                  }
+              ]
+}

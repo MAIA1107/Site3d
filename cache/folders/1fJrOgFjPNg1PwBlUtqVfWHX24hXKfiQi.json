@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Harry Potter ",
+    "id":  "1fJrOgFjPNg1PwBlUtqVfWHX24hXKfiQi",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1whRprhoEh97mCp4qdAcg1-LX3dpb1Bnl",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "15ojsxlQQd9s7tki-4UrJji1jojo7HZbW",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1q39vTSuTxs23CYOerHgSsgJJ3jJST8Se",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms1_HarryPotter_Rev1.rar",
+                      "id":  "1wHLexr-jdjSUFV0wr0phUMAlvSdpNyTi",
+                      "type":  "FILE"
+                  }
+              ]
+}

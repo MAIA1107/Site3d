@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Kratos ",
+    "id":  "1-dmaPJzEx8vNY4UeUZ_JH2DXX7crXo68",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1jT9Trx0IwyUJkcM89rLGEJCkkiJObvZh",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1NxlyCDdo6ebhGnz2TnVDRwbkbI_yXjiJ",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Samurai Incense Holder",
+    "id":  "1-QiXVaYWR7jhIR3xOztowJR8hK9h-8vy",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1zTqii2UipU7jkq0SmqIzRZVV9o0isFRH"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1nYTfin4FwJ9grdkAbdDcS8kYxXAjG4rD"
+                  }
+              ]
+}

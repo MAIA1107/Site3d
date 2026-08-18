@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Giannis Antetokounmpo ",
+    "id":  "1Cqn1gVUQ63_JLn0uIIBAcjWtERTQmfS4",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1omQpw-qrPn1SxID1Y5YLPfziWGjqlWj7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Giannis Antetokounmpo.rar",
+                      "id":  "1OIlnLlTL0DsdmrvyoGiCRQepGq9ppTuN",
+                      "type":  "FILE"
+                  }
+              ]
+}

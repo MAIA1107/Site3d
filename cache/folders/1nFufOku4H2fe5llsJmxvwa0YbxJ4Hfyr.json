@@ -1,0 +1,61 @@
+﻿{
+    "label":  "Articulated Flexi - Archaeopterix Mordedor Dragon",
+    "id":  "1nFufOku4H2fe5llsJmxvwa0YbxJ4Hfyr",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1 Archaeopterix Mordedor.gif",
+                      "id":  "1MMwOLKtGYxf8qtUjR8Q5RlXGa494SrYJ"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor - Ala.gif",
+                      "id":  "1h_S-F-nWbOKcTUYFnKRIYRdOKgIhK7ZN"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor - Mordisco.gif",
+                      "id":  "1g30IB9ibh1Hwq-qQEmeWkdpmXBtehNyz"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor 1.jpg",
+                      "id":  "1iZaIsFE5P3OIowaig6Sr92uUrMoDoXYX"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor 2.jpg",
+                      "id":  "1TvhG5FLyk_uq0rzCRgsjNsm5ZXMNnoaN"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor 3.jpg",
+                      "id":  "1PjdkTReGJBPDkbmjZ7cwnMXFyvsrAFel"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor 4.jpg",
+                      "id":  "1uE2OhAygVPk9hYk7wMbG8nzoxbf82XOR"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Archaeopterix Mordedor 5.jpg",
+                      "id":  "1Hl5loho7Irqx_18S5yf8L8vywa_Kcy_t"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "mecanismo oculto.mp4 Video",
+                      "id":  "1uHU_LFBXfXwQH-QTJg3mnXNO-b8yF4da"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "topo asa.mp4 Video",
+                      "id":  "1of5x6kRfWuDfeJwvdBHUGiGC918LnkA3"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1c83SWlKri6oUrd4Hug_irXKTEj5LIwxk"
+                  }
+              ]
+}

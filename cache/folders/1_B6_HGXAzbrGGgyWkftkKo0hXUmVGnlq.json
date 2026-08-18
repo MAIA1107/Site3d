@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Bugatti Veyron",
+    "id":  "1_B6_HGXAzbrGGgyWkftkKo0hXUmVGnlq",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-08-02_10-40-14.jpg",
+                      "id":  "1XYicgrGVUqRErQrEMsPJMehEy4Ap8BKB"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1ylun4igdG88p9UusJU4vR3ka1uFOPlll"
+                  }
+              ]
+}

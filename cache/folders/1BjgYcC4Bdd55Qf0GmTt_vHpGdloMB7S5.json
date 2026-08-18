@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Magneto Bust ",
+    "id":  "1BjgYcC4Bdd55Qf0GmTt_vHpGdloMB7S5",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1GQ63PzDkU-j3TSORyLO2RhxkTXi8opxz",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1rM967Bxrgyw_jTxhl2Tmu0kiBw4q__Tq",
+                      "type":  "FILE"
+                  }
+              ]
+}

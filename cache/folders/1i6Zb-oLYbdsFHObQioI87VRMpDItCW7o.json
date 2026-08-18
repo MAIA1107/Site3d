@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Recipiente/Dispensador/Organizador",
+    "id":  "1i6Zb-oLYbdsFHObQioI87VRMpDItCW7o",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "IMG_1987 (1).jpeg",
+                      "id":  "1dLY7FOa0aU4DVSMrgfgN3bX2ttj7AORF",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Potato+Onion+Garlic+Bins_stls.zip",
+                      "id":  "1FaGS302W7YvHr-ludkC4qw6h0UlibV1p",
+                      "type":  "FILE"
+                  }
+              ]
+}

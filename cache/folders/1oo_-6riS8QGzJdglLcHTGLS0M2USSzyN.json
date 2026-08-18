@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Ladybug",
+    "id":  "1oo_-6riS8QGzJdglLcHTGLS0M2USSzyN",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "ladybug.jpg",
+                      "id":  "16tzC22oE2RqT0NKKN6m7OF-Yyzl-l49z"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1PC61MeGqYweZYykkpw-JkRsHYcaUpNMP"
+                  }
+              ]
+}

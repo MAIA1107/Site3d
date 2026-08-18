@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Mother e Child ",
+    "id":  "1GLLGsDSdby4n-4xdc-dzOn881qIH4dBo",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).JPG",
+                      "id":  "1RkOZOjzH7UJMYakoGeeDt-Mu_kMTSK_m",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "_MotherChild01_scaled_for_sla_printer.stl Unknown",
+                      "id":  "1MmV9e2-kxy3Wy6i0z_usH5Wr2kJdJNGc",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "blank_plack.stl Unknown",
+                      "id":  "1cUrWs-s1LtH7YKUAw9EU-XWAQAkT6QJ1",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "mom_your_the_best.stl Unknown",
+                      "id":  "105BKauvN0MA9P45magbetM7bDz3XIzvj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "what_would_this_world_be_like.stl Unknown",
+                      "id":  "1NjHSJ_aDZfriJpYCbqUqvmtp9QX4MDuV",
+                      "type":  "FILE"
+                  }
+              ]
+}

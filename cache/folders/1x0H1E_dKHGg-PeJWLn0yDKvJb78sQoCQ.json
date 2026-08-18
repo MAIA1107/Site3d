@@ -1,0 +1,18 @@
+﻿{
+    "label":  "CATWOMAN Bust ",
+    "id":  "1x0H1E_dKHGg-PeJWLn0yDKvJb78sQoCQ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1g8emtX9jH9T_BwStkSypCzy5725ux9O9",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "167UQvrCrURlRl4ZzhJevpPXfLmf7N7Yn",
+                      "type":  "FILE"
+                  }
+              ]
+}

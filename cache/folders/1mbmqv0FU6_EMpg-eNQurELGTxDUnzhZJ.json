@@ -1,0 +1,18 @@
+﻿{
+    "label":  "KingKong Bust ",
+    "id":  "1mbmqv0FU6_EMpg-eNQurELGTxDUnzhZJ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpeg",
+                      "id":  "1ogrq0s4z2bB3JWym87V7LbtZ4KP-66D7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1P7k0djhHFhyLbN3_zaOF4Q1Af0hAuLVB",
+                      "type":  "FILE"
+                  }
+              ]
+}

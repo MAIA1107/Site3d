@@ -1,0 +1,24 @@
+﻿{
+    "label":  "Star Wars BD-1 Droid",
+    "id":  "1kP8AC2EPz68Rk1XbeE4jvDCEuvwWs_9k",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.webp",
+                      "id":  "1QwgjSGkU8_e1wC-FOvcigsHZxp6OHcP_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2.webp",
+                      "id":  "1tTN5K85c01LupdmZlz7F-MrgVN-8tMdv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1N4Rr9F31CRBzQc3WEoJH98OsvGWLZYoX",
+                      "type":  "FILE"
+                  }
+              ]
+}

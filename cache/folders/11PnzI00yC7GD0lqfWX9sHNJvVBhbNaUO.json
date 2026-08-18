@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Bordeaux Octopus Wine",
+    "id":  "11PnzI00yC7GD0lqfWX9sHNJvVBhbNaUO",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "resize-00.jpg",
+                      "id":  "1U9CNUCQ-9Eab2NVTF8IVGDLW3XiIuq2f",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Bordeaux_Octopus.rar",
+                      "id":  "1kaELM1U2R09Hp0OEwwe6sfI-E6fgAIiN",
+                      "type":  "FILE"
+                  }
+              ]
+}

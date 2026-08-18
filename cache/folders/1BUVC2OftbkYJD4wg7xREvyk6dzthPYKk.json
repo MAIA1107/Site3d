@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Barberini Faun  Drunken Satyr Glyptothek in Munich Germany ",
+    "id":  "1BUVC2OftbkYJD4wg7xREvyk6dzthPYKk",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Glyptothek in Munich Germany Copy Louvre France.jpg",
+                      "id":  "1FHociF4FwpvmzPB-N6j8mO3WaARBH4SE",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1yGDyvBHXdffJReEUiLS5WB3t8mWpi6_v",
+                      "type":  "FILE"
+                  }
+              ]
+}

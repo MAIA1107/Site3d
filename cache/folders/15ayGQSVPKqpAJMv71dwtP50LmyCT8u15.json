@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Kindred mask Keychain - Cults3D ",
+    "id":  "15ayGQSVPKqpAJMv71dwtP50LmyCT8u15",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2022-05-10_20-44-20.jpg",
+                      "id":  "1G9NhvS_0zZ7rRjcPL6pBLQFJpBj5hW9m",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1U_aKO_WYF0UmYFLSElVFRI1VY-jyWgBv",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,26 @@
+﻿{
+    "label":  "Articulated Tarantula Spider",
+    "id":  "1eu0AVVw7Y9uQg0eSC3MJKNI7V8tj2YwD",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Spider1.jpg",
+                      "id":  "1ZY1I97v7ghoJO8CzMEQMSadhYZuGV2ip"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Spider2.jpg",
+                      "id":  "1hQN5QVADoqlV2aFseKLbL734aPlEHle5"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Spider3.jpg",
+                      "id":  "1Tgu3qqEsN8f2xnNIPpOwh_o2Ypdx--9S"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1e0Nwf5c1awwZeiytD3tezkmGB2xmb6sk"
+                  }
+              ]
+}

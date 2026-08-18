@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Chaveiro nome 03 ",
+    "id":  "136HsZtT2pswYpoEE4vA6E063LlHxsnT0",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Nicole.png",
+                      "id":  "1R4gg6UDudtqFnji2DiEhmh6VL0_56RV_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Nicole.3mf",
+                      "id":  "1-SBJ8A-zKfycs9sMpDtEEeJjWNh8UtsI",
+                      "type":  "FILE"
+                  }
+              ]
+}

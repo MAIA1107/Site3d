@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Chaveiro nome 01 ",
+    "id":  "1XjacpSlJzJ3oQBo5t-6TsUJiZkkgGqL2",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1306053_customizable-name-keychain-with-border_cover.jpg",
+                      "id":  "1ZMGqDXUNVrawKPvoJPD8sxJoc3ZNvMSy",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Llavero+con+nombre+personalizable+con+borde.zip",
+                      "id":  "1BmRDRzwiPG5v3-e0T6D9zB4W3lKf7ryY",
+                      "type":  "FILE"
+                  }
+              ]
+}

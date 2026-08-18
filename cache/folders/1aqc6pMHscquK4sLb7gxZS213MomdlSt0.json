@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Wine Holder Giraffe",
+    "id":  "1aqc6pMHscquK4sLb7gxZS213MomdlSt0",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "11VnsP70Cp3of9LwBJPH1YrM4b026F2dV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.zip",
+                      "id":  "1w-Zhea0sAj3Uq7qytx8CAfEQfvoW9Ric",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,31 @@
+﻿{
+    "label":  "The Rope Lamp No.2",
+    "id":  "14LyGDNeJkEaJUrlzOgp176J72IEI9fYB",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2025-10-29_d32ed7555c146.webp",
+                      "id":  "1W-9V4b3OyEKjCw1HOi6pcQsRZnsnK7Po"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-10-29_e440399df901f.webp",
+                      "id":  "1vwcL1tjOFQkBET2N2wnvKAixIHzPml6Q"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-10-29_ec2b9ea4a871b.webp",
+                      "id":  "1PvMMXJrCtxoJJ5HFeN492enKRwhniuwm"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "obj_1_Rope V2 v1.stl Unknown",
+                      "id":  "1ABXaRpiofkCQt0oj1dJlWcqnsOapCDPy"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "obj_2_Body107.stl Unknown",
+                      "id":  "15YlyzlmSExtsZ0c4KSCfvF6TqMCi3FrZ"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Berserk Champion of Isengard ",
+    "id":  "1woiNWu_Y7i-PseP4MXOnpNp2pE8w6eUz",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Berserk champion of Isengard.jpg",
+                      "id":  "1CPce_Q1bL3EjXsL3vBNpW0xkpFYUYnM4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "125FiQmCZtrB4Cc6dkWXZahoHu7tUJQtY",
+                      "type":  "FILE"
+                  }
+              ]
+}

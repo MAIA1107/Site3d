@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Black Panther Bust - CGTrader ",
+    "id":  "1qUcLSHG-5BtlOGmohbTrfMMHK1hsYHsf",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "black-panther-bust-3d-model-obj-stl (1).jpg",
+                      "id":  "1ohv5cRI4Vv3TrkPnvOblXCONVAZObf-e",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "black-panther-bust-3d-model-obj-stl (2).jpg",
+                      "id":  "1PnQ1OoBn3eaAGL5JzdmzvPN87pg214S2",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "black-panther-bust-3d-model-obj-stl.jpg",
+                      "id":  "1oehnF4K2WGDaYAzY1z17SODBM-eF_HIk",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "black-panther-bust.rar",
+                      "id":  "1l33VKETgOwIFqiD6RodnUJunnXrxbbAO",
+                      "type":  "FILE"
+                  }
+              ]
+}

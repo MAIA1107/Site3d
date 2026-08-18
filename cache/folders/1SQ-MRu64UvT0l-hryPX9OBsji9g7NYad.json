@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Monkey",
+    "id":  "1SQ-MRu64UvT0l-hryPX9OBsji9g7NYad",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "articulated-monkey.jpg",
+                      "id":  "1bHPwvtrQQHlKqyQJxin2d1wDcXBBurpV"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1xcQ1cxlT4eJegnhOClgFX_f4Mqm8BQqF"
+                  }
+              ]
+}

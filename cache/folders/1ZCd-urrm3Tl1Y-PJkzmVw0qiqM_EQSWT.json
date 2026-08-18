@@ -1,0 +1,18 @@
+﻿{
+    "label":  "FAB365 SWAT Van",
+    "id":  "1ZCd-urrm3Tl1Y-PJkzmVw0qiqM_EQSWT",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1rcG5mHN72qvj8imnywcCwILi3M4cFqLs",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1iJzE1Ebxci8pEzSeMnhngUpw6asrns57",
+                      "type":  "FILE"
+                  }
+              ]
+}

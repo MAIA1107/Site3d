@@ -1,0 +1,26 @@
+﻿{
+    "label":  "Articulated Bunny",
+    "id":  "1qQt7yUkFKU7BfLoGZ9jzWByVcdtRDEZp",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Articulated Bunny.jpg",
+                      "id":  "1MTU2NDD7ZWGP49jZA2DRJWHj341SFYa4"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "per-prusasito-foto.jpg",
+                      "id":  "1THBf3any4rp6G2J949TEMab1lidU3Uav"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "bunny-v1.rar",
+                      "id":  "1JkbpiXreKeU_kfe4txXMBhyYLgqovxwF"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1JageeQS0kbIbXQwVxwsVR2A5QXbwrsSv"
+                  }
+              ]
+}

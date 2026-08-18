@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Superman ",
+    "id":  "1CgHJuwV5HfPvhAAdAsCXMT5bUrGLpmok",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1VMtvvsTkvH5uNTVzTuqF6nlBp6D5l_qR",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1A5PxihKtIsWvyWWKndLktVrZF1vvsj3C",
+                      "type":  "FILE"
+                  }
+              ]
+}

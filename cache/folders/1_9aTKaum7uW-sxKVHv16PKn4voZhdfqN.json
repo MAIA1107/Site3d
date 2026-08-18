@@ -1,0 +1,26 @@
+﻿{
+    "label":  "Flexi Jellyfish",
+    "id":  "1_9aTKaum7uW-sxKVHv16PKn4voZhdfqN",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Flexi - jellyfish.jpg",
+                      "id":  "1UxqTLM8NY2VQM9MnOxcmwZu0tZ66pY9d"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "JellyfishLower_06_PRINT.stl Unknown",
+                      "id":  "1edoCMk8NilYXi8JQkMU4wwcH2IsQG9Ih"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "JellyfishUpper_06_PRINT.stl Unknown",
+                      "id":  "1GH_fYywsAnwv0gZxM6bbGh0mz0gOatIJ"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "JellyfishUpperMeh_01_PRINT.stl Unknown",
+                      "id":  "17TGSDGZZfIceLhrFPZBaR6pDeIhM4yQp"
+                  }
+              ]
+}

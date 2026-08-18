@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Helicoptero Airwolf",
+    "id":  "1d_oFmcDCqXATAEfT3E7mS-yjQpvzBlaQ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "airwolf-bell-222-replica-3d-model-max-obj-stl-pdf.jpg",
+                      "id":  "1XqCKhyA85fTkI5nZuDRz8PaKzkWUCnS-"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1-Vt4dEqXc9GZjivCxU4EZ8kQiNUmI7hE"
+                  }
+              ]
+}

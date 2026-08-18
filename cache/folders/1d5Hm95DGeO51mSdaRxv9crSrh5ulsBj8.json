@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Mona Lisa ",
+    "id":  "1d5Hm95DGeO51mSdaRxv9crSrh5ulsBj8",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "mona.jpg",
+                      "id":  "1MJo1hZjxBrY5U_IN2xdZ3kJhhRDQMAe_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1JA-S_0B55vP05YUlGanaZgCwty0dNuKG",
+                      "type":  "FILE"
+                  }
+              ]
+}

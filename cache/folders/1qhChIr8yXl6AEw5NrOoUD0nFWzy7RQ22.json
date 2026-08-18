@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Suporte de Banho",
+    "id":  "1qhChIr8yXl6AEw5NrOoUD0nFWzy7RQ22",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2022-08-06_15-34-13.jpg",
+                      "id":  "1y6rJHn0MYPFkK_-ntqM3jp5PqoG8whzd",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "suporte de banho.rar",
+                      "id":  "1wujn4u6WQTsxh6koF7puX_NMmu-e3WQ5",
+                      "type":  "FILE"
+                  }
+              ]
+}

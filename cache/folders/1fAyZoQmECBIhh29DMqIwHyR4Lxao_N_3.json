@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Bust of Cupid ",
+    "id":  "1fAyZoQmECBIhh29DMqIwHyR4Lxao_N_3",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Bust of Cupid.jpg",
+                      "id":  "1cKhwyQ_FqnEqJ3nZChPdQ-xSopF3cXld",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "bust-of-cupid.rar",
+                      "id":  "1sI2z-6YQWv2spbwKEmWNlT3KmBWxBvjp",
+                      "type":  "FILE"
+                  }
+              ]
+}

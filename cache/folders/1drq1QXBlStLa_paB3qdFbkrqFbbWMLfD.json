@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Plakit - Chaveiro Homem Aranha ",
+    "id":  "1drq1QXBlStLa_paB3qdFbkrqFbbWMLfD",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1v0ssMmsW5f5edu1_7TeWNgYm6ZstevFd",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1JIDO0nbXSOhFgda2bdHZIGwz41O2DRJX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1vCZU2BZkGaH8it3VOt71MPkF-o7hyO2Q",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "1pP_y2L0nXYHQ21Y8Nbj--ezSZs6VlX4I",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms2_SpidermanHMSuit_Rev1.rar",
+                      "id":  "1ZTbSEtJP7Fvro-hKGhdagKzJ228ZU2sf",
+                      "type":  "FILE"
+                  }
+              ]
+}

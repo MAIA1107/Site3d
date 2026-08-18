@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coleções 3D</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f6f7f8;
+    color: #202124;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header { text-align: center; padding: 32px 16px 8px; }
+  header h1 { font-size: 28px; color: #202124; }
+  header p { color: #5f6368; margin-top: 6px; }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+  }
+  .tab {
+    border: none;
+    background: #e8eaed;
+    color: #3c4043;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .15s, color .15s;
+  }
+  .tab:hover { background: #dadce0; }
+  .tab.active { background: #1a73e8; color: #fff; }
+  main { flex: 1; padding: 8px 16px 32px; }
+  .grid {
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .grid.active { display: grid; }
+  .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(60,64,67,.12);
+  }
+  .thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #e8eaed;
+    display: block;
+  }
+  .thumb.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    color: #5f6368;
+    font-weight: 600;
+    font-size: 14px;
+    background: linear-gradient(135deg, #e8eaed, #dadce0);
+  }
+  .card-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+  .card-title { font-weight: 600; font-size: 14px; line-height: 1.3; }
+  .card-sub { color: #5f6368; font-size: 12px; }
+  .btn {
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    background: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: background .15s;
+  }
+  .btn:hover { background: #1765cc; }
+  .footer { text-align: center; color: #5f6368; font-size: 12px; padding: 30px 0 10px; }
+  .config-panel {
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+  .config-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .config-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .config-status {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    font-family: monospace;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .config-status.success {
+    background: #e6f4ea;
+    color: #1e8e3e;
+    border: 1px solid #ceead6;
+    display: block;
+  }
+  .config-status.error {
+    background: #fce8e6;
+    color: #d93025;
+    border: 1px solid #f5c6cb;
+    display: block;
+  }
+  .config-status.loading {
+    background: #e8f0fe;
+    color: #1a73e8;
+    border: 1px solid #d2e3fc;
+    display: block;
+  }
+  .config-tab-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(60,64,67,.12);
+  }
+  .config-tab-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .config-tab-card .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .config-tab-card label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #3c4043;
+    cursor: pointer;
+  }
+  .config-tab-card input,
+  .config-tab-card select {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #202124;
+    background: #fff;
+    outline: none;
+    transition: border-color .15s;
+  }
+  .config-tab-card input:focus,
+  .config-tab-card select:focus {
+    border-color: #1a73e8;
+  }
+  .config-tab-card h3 input[data-field="name"] {
+    flex: 1;
+    min-width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .config-tab-card .links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .config-tab-card .link-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .config-tab-card .link-row input {
+    flex: 1;
+  }
+  .btn-add-link {
+    border: 1px dashed #1a73e8;
+    background: transparent;
+    color: #1a73e8;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 4px;
+    transition: background .15s;
+  }
+  .btn-add-link:hover { background: #e8f0fe; }
+  .btn-remove-link {
+    border: none;
+    background: #d93025;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background .15s;
+  }
+  .btn-remove-link:hover { background: #b52b1c; }
+  .btn-add-tab {
+    border: none;
+    background: #1e8e3e;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 16px;
+    transition: background .15s;
+  }
+  .btn-add-tab:hover { background: #1a7a34; }
+  .btn-save {
+    border: none;
+    background: #1a73e8;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .15s;
+  }
+  .btn-save:hover { background: #1765cc; }
+  .btn-rebuild {
+    border: none;
+    background: #1a73e8;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .15s;
+  }
+  .btn-rebuild:hover { background: #1765cc; }
+  .btn-rebuild.running {
+    background: #dadce0;
+    color: #3c4043;
+    cursor: wait;
+  }
+  .config-tab-card .btn-remove {
+    border: none;
+    background: #d93025;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: background .15s;
+  }
+  .config-tab-card .btn-remove:hover { background: #b52b1c; }
+  .config-section { margin-bottom: 8px; }
+  .upload-zone {
+    border: 2px dashed #dadce0;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+    background: #fafafa;
+  }
+  .upload-zone:hover,
+  .upload-zone.dragover {
+    border-color: #1a73e8;
+    background: #e8f0fe;
+  }
+  .upload-zone .upload-icon { font-size: 48px; margin-bottom: 8px; }
+  .upload-zone p { color: #5f6368; font-size: 14px; margin: 4px 0; }
+  .upload-zone a { color: #1a73e8; text-decoration: none; }
+  .upload-zone a:hover { text-decoration: underline; }
+  .upload-hint { font-size: 12px !important; color: #9aa0a6 !important; }
+  .upload-progress {
+    margin-top: 12px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #e8f0fe;
+    color: #1a73e8;
+    font-size: 13px;
+    font-family: monospace;
+  }
+  .uploaded-files {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .uploaded-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  .uploaded-file .file-name { flex: 1; color: #202124; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .uploaded-file .file-size { color: #5f6368; font-size: 12px; }
+  .uploaded-file .btn-del {
+    border: none; background: none; color: #d93025; cursor: pointer; font-size: 16px; padding: 2px 6px; border-radius: 4px;
+  }
+  .uploaded-file .btn-del:hover { background: #fce8e6; }
+  .link-row.duplicate { background: #fce8e6; border-radius: 8px; padding: 4px 8px; margin: -4px -8px; }
+  .link-row.duplicate input { border-color: #d93025; }
+  .link-row.duplicate .dup-hint { color: #d93025; font-size: 11px; margin-top: 2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Coleções 3D</h1>
+  <p>Modelos STL para impressão 3D &middot; clique na aba para ver a coleção</p>
+</header>
+
+<nav class="tabs" id="tabs"></nav>
+<main id="container"></main>
+
+<footer class="footer">Arquivos hospedados no Google Drive &middot; gerado automaticamente</footer>
+
+<script>
+__COLLECTIONS__
+
+const tabsEl = document.getElementById("tabs");
+const container = document.getElementById("container");
+
+function buildTab(name, active) {
+  const b = document.createElement("button");
+  b.className = "tab" + (active ? " active" : "");
+  b.textContent = name;
+  b.addEventListener("click", () => selectTab(name));
+  return b;
+}
+
+function buildGrid(coll, active) {
+  const g = document.createElement("div");
+  g.className = "grid" + (active ? " active" : "");
+  g.id = "grid-" + coll.name;
+  coll.items.forEach(it => {
+    const card = document.createElement("div");
+    card.className = "card";
+    const thumb = it.img
+      ? '<img class="thumb" loading="lazy" src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
+      : '<div class="thumb placeholder">' + it.title + '</div>';
+    const label = it.label || 'Baixar ZIP';
+    const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
+    card.innerHTML =
+      thumb +
+      '<div class="card-body">' +
+        '<div>' +
+          '<div class="card-title">' + it.title + '</div>' +
+          '<div class="card-sub">' + it.sub + '</div>' +
+        '</div>' +
+        '<a class="btn" href="' + href + '"' + (it.link ? ' target="_blank"' : '') + '>' + label + '</a>' +
+      '</div>';
+    g.appendChild(card);
+  });
+  return g;
+}
+
+COLLECTIONS.forEach((c, i) => {
+  tabsEl.appendChild(buildTab(c.name, i === 0));
+  container.appendChild(buildGrid(c, i === 0));
+});
+
+function selectTab(name) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.textContent === name));
+  document.querySelectorAll(".grid").forEach(g => g.classList.toggle("active", g.id === "grid-" + name));
+  const cp = document.getElementById("config-panel");
+  if (cp) {
+    cp.style.display = (name === "Configurações") ? "block" : "none";
+    if (name === "Configurações" && !cp.dataset.loaded && window.__SERVER__) loadConfig();
+  }
+}
+
+(function() {
+  const configBtn = document.createElement("button");
+  configBtn.className = "tab";
+  configBtn.textContent = "Configurações";
+  configBtn.addEventListener("click", () => selectTab("Configurações"));
+  tabsEl.appendChild(configBtn);
+
+  const configPanel = document.createElement("div");
+  configPanel.id = "config-panel";
+  configPanel.className = "config-panel";
+  configPanel.style.display = "none";
+  container.appendChild(configPanel);
+})();
+
+let configData = null;
+
+function loadConfig() {
+  const panel = document.getElementById("config-panel");
+  if (!window.__SERVER__) {
+    panel.innerHTML = '<div class="config-status error">Execute: node sistema/server.js</div>';
+    return;
+  }
+  panel.innerHTML = '<div class="config-status loading">Carregando configurações...</div>';
+  fetch("/api/config")
+    .then(r => r.json())
+    .then(data => {
+      configData = data;
+      panel.dataset.loaded = "1";
+      renderConfigPanel(data);
+    })
+    .catch(e => {
+      panel.innerHTML = '<div class="config-status error">Erro ao carregar: ' + e.message + '</div>';
+    });
+}
+
+function renderConfigPanel(data) {
+  const panel = document.getElementById("config-panel");
+  let html = '<div class="config-header">' +
+    '<h2 style="font-size:22px;margin:0">Configurações</h2>' +
+    '<div class="config-actions">' +
+      '<button class="btn-save" onclick="saveConfig()">Salvar</button>' +
+      '<button class="btn-rebuild" id="btn-rebuild" onclick="rebuildPage()">Rebuild</button>' +
+    '</div>' +
+  '</div>' +
+  '<div class="config-section">' +
+    '<h3 style="font-size:16px;margin:20px 0 12px;color:#202124">Abas</h3>' +
+    '<div id="config-cards"></div>' +
+    '<button class="btn-add-tab" onclick="addTab()">+ Nova Aba</button>' +
+  '</div>' +
+  '<div class="config-section">' +
+    '<h3 style="font-size:16px;margin:20px 0 12px;color:#202124">Upload de Arquivos</h3>' +
+    '<div class="upload-zone" id="upload-zone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">' +
+      '<input type="file" id="file-input" multiple style="display:none" onchange="handleFileSelect(event)" />' +
+      '<div class="upload-icon">&#128194;</div>' +
+      '<p>Arraste arquivos aqui ou <a href="#" onclick="document.getElementById(\'file-input\').click();return false">clique para selecionar</a></p>' +
+      '<p class="upload-hint">Imagens, ZIPs, ou qualquer arquivo</p>' +
+    '</div>' +
+    '<div class="upload-progress" id="upload-progress" style="display:none"></div>' +
+    '<div id="uploaded-files" class="uploaded-files"></div>' +
+  '</div>' +
+  '<div class="config-status" id="config-status"></div>';
+  panel.innerHTML = html;
+
+  const cardsContainer = document.getElementById("config-cards");
+  (data.tabs || []).forEach(tab => cardsContainer.appendChild(buildConfigCard(tab)));
+  loadUploadedFiles();
+}
+
+function buildConfigCard(tab) {
+  const card = document.createElement("div");
+  card.className = "config-tab-card";
+
+  const type = tab.type || "drive";
+  const expand = !!tab.expand;
+
+  let typeOptions = '<option value="drive"' + (type === "drive" ? " selected" : "") + '>drive</option>' +
+    '<option value="static"' + (type === "static" ? " selected" : "") + '>static</option>' +
+    '<option value="updates"' + (type === "updates" ? " selected" : "") + '>updates</option>';
+
+  let fieldsHtml = "";
+  if (type === "drive") {
+    if (expand) {
+      const links = Array.isArray(tab.links) ? tab.links : [];
+      fieldsHtml += '<div class="links-list">';
+      links.forEach(url => {
+        fieldsHtml += '<div class="link-row">' +
+          '<input placeholder="URL" data-field="url" value="' + escapeAttr(url) + '" oninput="checkDup(this)" />' +
+          '<button class="btn-remove-link" onclick="removeLink(this)">X</button>' +
+        '</div>';
+      });
+      fieldsHtml += '</div>';
+      fieldsHtml += '<button class="btn-add-link" onclick="addLink(this)">+ Link</button>';
+    } else {
+      const links = Array.isArray(tab.links) ? tab.links : [];
+      fieldsHtml += '<div class="links-list">';
+      links.forEach(link => {
+        const url = typeof link === "string" ? link : (link.url || "");
+        const label = typeof link === "object" ? (link.label || "") : "";
+        fieldsHtml += '<div class="link-row">' +
+          '<input placeholder="URL" data-field="url" value="' + escapeAttr(url) + '" oninput="checkDup(this)" />' +
+          '<input placeholder="Label" data-field="label" value="' + escapeAttr(label) + '" />' +
+          '<button class="btn-remove-link" onclick="removeLink(this)">X</button>' +
+        '</div>';
+      });
+      fieldsHtml += '</div>';
+      fieldsHtml += '<button class="btn-add-link" onclick="addLink(this)">+ Link</button>';
+    }
+  } else if (type === "static") {
+    fieldsHtml += '<div class="fields" style="flex-direction:row;align-items:center;gap:10px">' +
+      '<label>Arquivo:</label>' +
+      '<input placeholder="ex: tab_avioes.js" data-field="file" value="' + escapeAttr(tab.file || "") + '" />' +
+    '</div>';
+  } else if (type === "updates") {
+    fieldsHtml += '<div class="fields" style="flex-direction:row;align-items:center;gap:10px">' +
+      '<label>Max:</label>' +
+      '<input type="number" data-field="max" value="' + (tab.max || 80) + '" style="width:80px" />' +
+    '</div>';
+  }
+
+  card.innerHTML = '<h3>' +
+    '<input class="tab-name-input" data-field="name" value="' + escapeAttr(tab.name || "") + '" />' +
+    '<select data-field="type" onchange="onTypeChange(this)">' + typeOptions + '</select>' +
+    (type === "drive" ? '<label><input type="checkbox" data-field="expand"' + (expand ? ' checked' : '') + ' onchange="onExpandChange(this)" /> expand</label>' : '') +
+    '<button class="btn-remove" onclick="removeTab(this)">X</button>' +
+  '</h3>' +
+  '<div class="fields">' + fieldsHtml + '</div>';
+
+  return card;
+}
+
+function escapeAttr(str) {
+  return String(str).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function onTypeChange(sel) {
+  const card = sel.closest(".config-tab-card");
+  const name = card.querySelector('[data-field="name"]').value;
+  const expand = card.querySelector('[data-field="expand"]');
+  const tab = { name: name, type: sel.value, expand: expand ? expand.checked : false };
+  const newCard = buildConfigCard(tab);
+  card.replaceWith(newCard);
+}
+
+function onExpandChange(cb) {
+  const card = cb.closest(".config-tab-card");
+  const name = card.querySelector('[data-field="name"]').value;
+  const type = card.querySelector('[data-field="type"]').value;
+  const tab = { name: name, type: type, expand: cb.checked };
+  const newCard = buildConfigCard(tab);
+  card.replaceWith(newCard);
+}
+
+function addTab() {
+  const cardsContainer = document.getElementById("config-cards");
+  cardsContainer.appendChild(buildConfigCard({ name: "Nova Aba", type: "drive", expand: false, links: [] }));
+}
+
+function removeTab(btn) {
+  btn.closest(".config-tab-card").remove();
+}
+
+function addLink(btn) {
+  const card = btn.closest(".config-tab-card");
+  const isExpand = card.querySelector('[data-field="expand"]');
+  const expandChecked = isExpand && isExpand.checked;
+  const linksList = btn.previousElementSibling;
+  const row = document.createElement("div");
+  row.className = "link-row";
+  row.innerHTML = '<input placeholder="URL" data-field="url" value="" oninput="checkDup(this)" />' +
+    (!expandChecked ? '<input placeholder="Label" data-field="label" value="" />' : '') +
+    '<button class="btn-remove-link" onclick="removeLink(this)">X</button>';
+  linksList.appendChild(row);
+  row.querySelector('[data-field="url"]').focus();
+}
+
+function checkDup(input) {
+  const card = input.closest(".config-tab-card");
+  const url = input.value.trim();
+  if (!url) {
+    input.closest(".link-row").classList.remove("duplicate");
+    var oldHint = input.closest(".link-row").querySelector(".dup-hint");
+    if (oldHint) oldHint.remove();
+    return;
+  }
+  const allInputs = card.querySelectorAll('[data-field="url"]');
+  var count = 0;
+  allInputs.forEach(function(inp) {
+    if (inp.value.trim() === url) count++;
+  });
+  const row = input.closest(".link-row");
+  var hint = row.querySelector(".dup-hint");
+  if (count > 1) {
+    row.classList.add("duplicate");
+    if (!hint) {
+      hint = document.createElement("div");
+      hint.className = "dup-hint";
+      hint.textContent = "Link duplicado";
+      row.appendChild(hint);
+    }
+  } else {
+    row.classList.remove("duplicate");
+    if (hint) hint.remove();
+  }
+}
+
+function removeLink(btn) {
+  btn.closest(".link-row").remove();
+}
+
+function collectConfigData() {
+  const cards = document.querySelectorAll(".config-tab-card");
+  const tabs = [];
+  let totalDups = 0;
+  cards.forEach(card => {
+    const name = card.querySelector('[data-field="name"]').value;
+    const type = card.querySelector('[data-field="type"]').value;
+    const expandEl = card.querySelector('[data-field="expand"]');
+    const expand = expandEl ? expandEl.checked : false;
+    const tab = { name: name, type: type };
+    if (type === "drive") {
+      tab.expand = expand;
+      const linkRows = card.querySelectorAll(".link-row");
+      const links = [];
+      const seen = {};
+      linkRows.forEach(row => {
+        const url = row.querySelector('[data-field="url"]').value.trim();
+        if (!url) return;
+        if (seen[url]) { totalDups++; return; }
+        seen[url] = true;
+        if (expand) {
+          links.push(url);
+        } else {
+          const label = row.querySelector('[data-field="label"]').value;
+          links.push({ url: url, label: label });
+        }
+      });
+      tab.links = links;
+    } else if (type === "static") {
+      const fileEl = card.querySelector('[data-field="file"]');
+      tab.file = fileEl ? fileEl.value : "";
+    } else if (type === "updates") {
+      const maxEl = card.querySelector('[data-field="max"]');
+      tab.max = maxEl ? parseInt(maxEl.value, 10) || 80 : 80;
+    }
+    tabs.push(tab);
+  });
+  if (totalDups > 0) showStatus(totalDups + " link(s) duplicado(s) removido(s) automaticamente.", "loading");
+  return { tabs: tabs };
+}
+
+function showStatus(msg, type) {
+  const el = document.getElementById("config-status");
+  if (!el) return;
+  el.className = "config-status " + type;
+  el.textContent = msg;
+  el.style.display = "block";
+}
+
+function saveConfig() {
+  const data = collectConfigData();
+  showStatus("Salvando...", "loading");
+  fetch("/api/config", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  })
+    .then(r => r.json())
+    .then(() => showStatus("Configurações salvas com sucesso!", "success"))
+    .catch(e => showStatus("Erro ao salvar: " + e.message, "error"));
+}
+
+function rebuildPage() {
+  const btn = document.getElementById("btn-rebuild");
+  if (btn) { btn.classList.add("running"); btn.disabled = true; }
+  showStatus("Iniciando rebuild...", "loading");
+  fetch("/api/rebuild", { method: "POST" })
+    .then(() => pollRebuildStatus())
+    .catch(e => { showStatus("Erro ao iniciar rebuild: " + e.message, "error"); if (btn) { btn.classList.remove("running"); btn.disabled = false; } });
+}
+
+function pollRebuildStatus() {
+  const btn = document.getElementById("btn-rebuild");
+  const poll = setInterval(() => {
+    fetch("/api/status")
+      .then(r => r.json())
+      .then(data => {
+        const status = document.getElementById("config-status");
+        if (status && data.output) {
+          const lines = Array.isArray(data.output) ? data.output.slice(-8) : String(data.output).split("\n").slice(-8);
+          status.className = "config-status loading";
+          status.textContent = lines.join("\n");
+          status.style.display = "block";
+        }
+        if (data.done) {
+          clearInterval(poll);
+          showStatus("Concluido!", "success");
+          if (btn) { btn.classList.remove("running"); btn.disabled = false; }
+          setTimeout(() => location.reload(), 2000);
+        }
+      })
+      .catch(() => {});
+  }, 2000);
+}
+
+function handleDragOver(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var zone = document.getElementById("upload-zone");
+  if (zone) zone.classList.add("dragover");
+}
+
+function handleDragLeave(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var zone = document.getElementById("upload-zone");
+  if (zone) zone.classList.remove("dragover");
+}
+
+function handleDrop(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var zone = document.getElementById("upload-zone");
+  if (zone) zone.classList.remove("dragover");
+  var files = e.dataTransfer.files;
+  if (files.length > 0) uploadFiles(files);
+}
+
+function handleFileSelect(e) {
+  var files = e.target.files;
+  if (files.length > 0) uploadFiles(files);
+}
+
+function uploadFiles(files) {
+  var progress = document.getElementById("upload-progress");
+  if (progress) {
+    progress.style.display = "block";
+    progress.textContent = "Enviando " + files.length + " arquivo(s)...";
+  }
+  var formData = new FormData();
+  for (var i = 0; i < files.length; i++) {
+    formData.append("file", files[i]);
+  }
+  fetch("/api/upload", { method: "POST", body: formData })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (progress) {
+        if (data.ok && data.files) {
+          progress.textContent = data.files.length + " arquivo(s) enviado(s) com sucesso!";
+          setTimeout(function() { progress.style.display = "none"; }, 3000);
+        } else {
+          progress.textContent = "Erro: " + (data.error || "desconhecido");
+          progress.style.color = "#d93025";
+        }
+      }
+      loadUploadedFiles();
+    })
+    .catch(function(e) {
+      if (progress) {
+        progress.textContent = "Erro de rede: " + e.message;
+        progress.style.color = "#d93025";
+      }
+    });
+}
+
+function loadUploadedFiles() {
+  var container = document.getElementById("uploaded-files");
+  if (!container) return;
+  fetch("/api/uploads")
+    .then(function(r) { return r.json(); })
+    .then(function(files) {
+      if (!files || files.length === 0) {
+        container.innerHTML = '<p style="color:#9aa0a6;font-size:13px">Nenhum arquivo enviado ainda.</p>';
+        return;
+      }
+      var html = '';
+      files.forEach(function(f) {
+        var size = f.size > 1048576 ? (f.size / 1048576).toFixed(1) + ' MB' : (f.size / 1024).toFixed(0) + ' KB';
+        html += '<div class="uploaded-file">' +
+          '<span class="file-name">' + escapeAttr(f.name) + '</span>' +
+          '<span class="file-size">' + size + '</span>' +
+          '<button class="btn-del" onclick="deleteUpload(\'' + escapeAttr(f.name) + '\')" title="Excluir">&#10005;</button>' +
+        '</div>';
+      });
+      container.innerHTML = html;
+    })
+    .catch(function() {
+      container.innerHTML = '<p style="color:#d93025;font-size:13px">Erro ao carregar arquivos.</p>';
+    });
+}
+
+function deleteUpload(name) {
+  if (!confirm("Excluir " + name + "?")) return;
+  fetch("/api/uploads/" + encodeURIComponent(name), { method: "DELETE" })
+    .then(function(r) { return r.json(); })
+    .then(function() { loadUploadedFiles(); })
+    .catch(function() { alert("Erro ao excluir"); });
+}
+</script>
+</body>
+</html>

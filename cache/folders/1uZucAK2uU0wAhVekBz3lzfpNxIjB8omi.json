@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Bust Predator ",
+    "id":  "1uZucAK2uU0wAhVekBz3lzfpNxIjB8omi",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1Rnkp6TMRu9QeqXCRx0mVo9EJKhdQQFXJ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1OiZKcu9fgHjqy35nwUxpyI--r6-Qgz7u",
+                      "type":  "FILE"
+                  }
+              ]
+}

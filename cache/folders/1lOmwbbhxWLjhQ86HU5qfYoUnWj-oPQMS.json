@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Vampiro Cyber Punk ",
+    "id":  "1lOmwbbhxWLjhQ86HU5qfYoUnWj-oPQMS",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.png",
+                      "id":  "1k0WTsJB78btYS5Y_QgZHtLOrukfAdeNP",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "17j8MXuDBRjaN4JHvaXIYQaOP2jpRjMDR",
+                      "type":  "FILE"
+                  }
+              ]
+}

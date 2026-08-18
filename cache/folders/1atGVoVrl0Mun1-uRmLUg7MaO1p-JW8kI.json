@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Hellraiser Bust - Gambody ",
+    "id":  "1atGVoVrl0Mun1-uRmLUg7MaO1p-JW8kI",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-10-06_14-12-06.jpg",
+                      "id":  "117SgTAkYUE6Lnk73wGiWS0XVzIyq51aj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1RruAvLCm8FE1cc1gUHGyBYlXykgV4Vd3",
+                      "type":  "FILE"
+                  }
+              ]
+}

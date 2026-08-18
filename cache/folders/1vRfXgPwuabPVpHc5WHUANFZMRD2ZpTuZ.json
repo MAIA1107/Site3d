@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Elder Ankylosaurus - Articulated Flexi",
+    "id":  "1vRfXgPwuabPVpHc5WHUANFZMRD2ZpTuZ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1BzUlOcndjmQzOU3w6wx3po8SGeblSh_g"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "stl.rar",
+                      "id":  "1N5jVzNzCvNX9igJqD6w7u9kA70I2f6t5"
+                  }
+              ]
+}

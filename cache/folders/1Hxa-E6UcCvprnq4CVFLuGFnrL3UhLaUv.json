@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Ariel Nomad",
+    "id":  "1Hxa-E6UcCvprnq4CVFLuGFnrL3UhLaUv",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1e2ZKwDN8bwQH3bfEOfck0Y7k1nAqwV09"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1-Qp6vZPhKWh8WewUYhaRt7FDUXAk7oRP"
+                  }
+              ]
+}

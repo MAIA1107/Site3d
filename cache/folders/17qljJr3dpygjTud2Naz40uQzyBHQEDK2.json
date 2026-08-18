@@ -1,0 +1,21 @@
+﻿{
+    "label":  "Articulated Plesiosaur - Loch Ness Monster",
+    "id":  "17qljJr3dpygjTud2Naz40uQzyBHQEDK2",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "20220228_132037.webp",
+                      "id":  "1XL4eUm5aXzJQPHFTuhJHfu32OxeNlbzg"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "20220228_132511.webp",
+                      "id":  "1uccypIzb9EqMErkXE0rBlym3MrqBy4r5"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Plesiosaur.rar",
+                      "id":  "1kBomoHJDODycpTJbcYauWu5-nL_h1b7I"
+                  }
+              ]
+}

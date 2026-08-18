@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Flexi Koi pez",
+    "id":  "1G1S0H0XZYWaZ23MndobSmN3kHToi-0SH",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Articulated koi pez articulado.png",
+                      "id":  "1Dd5y8HbeCYdZF7t4-OOb4EK67zHMcZN0"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Articulated Flexi Koi Fish fixed.rar",
+                      "id":  "1KolaAq5PtZUs8mzuq0Lbc0RdedGeVaOL"
+                  }
+              ]
+}

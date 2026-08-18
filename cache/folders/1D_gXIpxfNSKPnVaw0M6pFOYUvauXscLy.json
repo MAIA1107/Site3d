@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Mulher Maravilha ",
+    "id":  "1D_gXIpxfNSKPnVaw0M6pFOYUvauXscLy",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1vPDDTDTZAZMMBkx18iaL3NcFaq0DEA8i",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1r0h2c2UgBT-ejr0jNsJR0lpNKdNGxH18",
+                      "type":  "FILE"
+                  }
+              ]
+}

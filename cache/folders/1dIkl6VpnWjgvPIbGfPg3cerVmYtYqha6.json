@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Fab365 Super Mario",
+    "id":  "1dIkl6VpnWjgvPIbGfPg3cerVmYtYqha6",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Mario Pieces.jpg",
+                      "id":  "1tF_H8e1lknsrRjsrYYntjVHUtvsF-bJp",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1QJo14PCQHShRtTwEmeioVgG0G_xrpv3v",
+                      "type":  "FILE"
+                  }
+              ]
+}

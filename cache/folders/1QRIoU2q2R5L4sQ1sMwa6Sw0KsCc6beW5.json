@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Malcador Infernus Tank",
+    "id":  "1QRIoU2q2R5L4sQ1sMwa6Sw0KsCc6beW5",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.png",
+                      "id":  "1apWrlvrt4neU71T7U6aREM-DAo3ut4D-"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1l1_k-wurCIPJLLQkSLprVXvOr-zbMOCS"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Porta Esponja Bob Esponja",
+    "id":  "1Uh44q-cwDWGy27YQoHyhF-zI9mga8vnc",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2022-08-06_15-29-33.jpg",
+                      "id":  "1P2BF87-MLEZzWzEdDeNwVfjS4tauCCR8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1EQuhR6K8O8sERu5lw7KB_PJvTGcr3nfd",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Célula Vegetal ",
+    "id":  "1MeQfwnr07KXgk0cSEj14fm_ZqIJJwBR_",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2024-03-13_93b1b3177a16a.webp",
+                      "id":  "1vbZ_2qQJHK-9PMo8MZjWbhgYQlvLJFpx",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Plant+Cell.zip",
+                      "id":  "1IPpJpOt3xSR2xP8sSsCiY28V3_X8Ikbi",
+                      "type":  "FILE"
+                  }
+              ]
+}

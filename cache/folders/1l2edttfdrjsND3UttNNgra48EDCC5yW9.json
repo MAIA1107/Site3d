@@ -1,0 +1,51 @@
+﻿{
+    "label":  "Modern Lamp - Nordic Lamp E27",
+    "id":  "1l2edttfdrjsND3UttNNgra48EDCC5yW9",
+    "items":  [
+                  {
+                      "mime":  "",
+                      "name":  ".DS_Store Binary",
+                      "id":  "1dp7fpyzFWbNrNQypuRvcFmQJBh4r14FN"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-24_294cbf91716ef.webp",
+                      "id":  "1xcqGRvKC6fm5Zmdn8aCrTHh_XENewWGG"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-06-24_c745c805837b1.webp",
+                      "id":  "1rMSF7ZZN0JlUMNdBiHP447olvzP9HRfF"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Basev1.3mf",
+                      "id":  "1qZ4WT3JwIJ4bXYofqHDrBg4XzPi-YOJY"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Basev1.stl Unknown",
+                      "id":  "14X199tyHWfnI4nATf3dLwaJ6Xj8x8l3R"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Lampv1.3mf",
+                      "id":  "1bXCUKqvhQSReOYlEzOC7nUFD36m20ZWi"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Lampv1.stl Unknown",
+                      "id":  "1U4fjHZF4-R99YY2GKgoQ3mrHR3XAPYrH"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "portalamparav1.3mf",
+                      "id":  "1zfb_xNh-7d3zinF-njJv86bsTGiKYZtx"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "portalamparav1.stl Unknown",
+                      "id":  "1jhimJp0hakuJOx7vuEqTfFHlsmFdoQUA"
+                  }
+              ]
+}

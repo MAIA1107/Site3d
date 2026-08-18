@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Conan Bust ",
+    "id":  "1tz8L0humGcaHU_GSSr9G49q2MhjUK94i",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1mjA0xaeEkb0xssHLagbZiml6dRBYs3Kb",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1lAtsBQ18Tu3zskIYsJNAqOehmI-WUuV5",
+                      "type":  "FILE"
+                  }
+              ]
+}

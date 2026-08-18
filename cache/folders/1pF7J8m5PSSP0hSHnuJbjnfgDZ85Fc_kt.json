@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Classico Wolverine ",
+    "id":  "1pF7J8m5PSSP0hSHnuJbjnfgDZ85Fc_kt",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1bXAE2_3ObAeatNnnaTkF1MT6Vz9zVjwU",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1AuufhdZgpd8ZWYCYzL4Q_IksBbc97uXj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "12qoHf0k1bMSGYT39vq_CAcfq4KxchKXu",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms3_ClassicWolverine_Rev1.rar",
+                      "id":  "1czAUvY6T7Xamlnkv6lnU9cn1ALiqeMrj",
+                      "type":  "FILE"
+                  }
+              ]
+}

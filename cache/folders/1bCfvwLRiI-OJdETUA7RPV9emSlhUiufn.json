@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Centipede",
+    "id":  "1bCfvwLRiI-OJdETUA7RPV9emSlhUiufn",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "134GSUq5fKw1wIIzgSXpXuwafdfJ5fGGc"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1budY6pP3LLq6T0ZwlgP5BCBQKyAUJdDi"
+                  }
+              ]
+}

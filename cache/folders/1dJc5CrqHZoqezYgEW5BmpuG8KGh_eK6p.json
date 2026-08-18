@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Foldable Beluga",
+    "id":  "1dJc5CrqHZoqezYgEW5BmpuG8KGh_eK6p",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Foldable Beluga.jpg",
+                      "id":  "1Y0tYFtg-Y0G2fpxpKhyGKaqS85oUh87x",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "foldable_beluga.rar",
+                      "id":  "1_i6HixIPMHed4JJh8l3mxxw6uA8RMj-f",
+                      "type":  "FILE"
+                  }
+              ]
+}

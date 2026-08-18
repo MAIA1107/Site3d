@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Mammoth Tank",
+    "id":  "15W3nyaBi0zyVKgimXsqKCw1JkTrt_dJA",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1WYGiBlHJ6-rmG2Ix7w4gl4PfFDGCMlRB"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1ZmSRZLkkgV76FWcvx5vRJFYd-ozceFiG"
+                  }
+              ]
+}

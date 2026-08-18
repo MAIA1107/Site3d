@@ -1,0 +1,21 @@
+﻿{
+    "label":  "Articulated Posable Figure Female",
+    "id":  "1R-o6f7vw3ACJqACoML_1ECT7-G2sUAEZ",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "parts_list.jpg",
+                      "id":  "1MeGCJKa3pYbq699z4NgBBjigqOP6Kvhv"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "render.jpg",
+                      "id":  "1XTEHsykeKvV7irnYEUJ71ADHdJ8ZpQtq"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1AXkgKD0CKy7zcFOuSPOkzsGN9FfWtVWF"
+                  }
+              ]
+}

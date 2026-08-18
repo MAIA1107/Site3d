@@ -1,0 +1,24 @@
+﻿{
+    "label":  "Owl Wall key holder",
+    "id":  "1zcIw0xUVT4l0KRM81p7yu1s5l-fNVwiq",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2022-06-08_22-30-27.jpg",
+                      "id":  "1yPJigqPmvePv3eQII8nQwvjdCSD6Xntt",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "animation.gif.mp4 Video",
+                      "id":  "19n5csaNRpSIBSn7rFg55RtBRZZLUSNXc",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1j8ePC8-xdwLnoTERZv2M4qbKsGVFZrzg",
+                      "type":  "FILE"
+                  }
+              ]
+}

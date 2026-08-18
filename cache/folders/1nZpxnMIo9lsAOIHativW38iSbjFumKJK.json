@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Table Lamp E27",
+    "id":  "1nZpxnMIo9lsAOIHativW38iSbjFumKJK",
+    "items":  [
+                  {
+                      "mime":  "",
+                      "name":  ".DS_Store Binary",
+                      "id":  "1vW0KRaxDajLQCdYnw31vNSDBq22qUBZ-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-04-11_091ae97a21ea3.webp",
+                      "id":  "1Jr560gNR5vME2tkDaSZmA1l35Bi89E5E",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2026-01-17_5138544ed93f1.webp",
+                      "id":  "1hAdYM7mgV4FmZLIYI6_sCA0wNTYiH9HO",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "lampenfuß.3mf",
+                      "id":  "1wCdBV7oMvS8IR14QntXfvg6XocQhN-o6",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "lampenschirm.3mf",
+                      "id":  "1HmW2cJdH7mCKXBFAFXrmEUm_574KPx4t",
+                      "type":  "FILE"
+                  }
+              ]
+}

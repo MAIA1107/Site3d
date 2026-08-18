@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Cobra Kai Bust ",
+    "id":  "1fbTSW1HyZR9sYTHRAu6g9DsteZyNaXyc",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Cobra Kai Bust.jpg",
+                      "id":  "1hNjEQ2O2eCH8nzefGKxervG0WQltLIG1",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "14K-CIMcdwrMU8QFE2kOGP-kZ_StO0zy-",
+                      "type":  "FILE"
+                  }
+              ]
+}

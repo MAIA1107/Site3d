@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Oscar Statue",
+    "id":  "1N6K3qv7-m1ONBAHW6AKv-YROgGVYBkhj",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1dklNe-w_3BVKRvy8NZvosLxJxGsV7mZj"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1c8FMQpZ1HxbSwhyvrGv_jgCbfHZ_Kf-y"
+                  }
+              ]
+}

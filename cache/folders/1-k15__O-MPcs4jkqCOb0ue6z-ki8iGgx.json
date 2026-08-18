@@ -1,0 +1,18 @@
+﻿{
+    "label":  "POKEMON Vermelho ",
+    "id":  "1-k15__O-MPcs4jkqCOb0ue6z-ki8iGgx",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "65aedb8c65fc9425.webp",
+                      "id":  "1qhasZrUgwQq4qQ_wKXeeKOjT1JD3-CUq",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "ROSSO_stls.zip",
+                      "id":  "1pmergKMfznzBoeTcAIixX51wKsYl3v8A",
+                      "type":  "FILE"
+                  }
+              ]
+}

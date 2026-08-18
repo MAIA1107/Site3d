@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Penywisse ",
+    "id":  "1A9Be0wF20eiA3kNuF_E7sXrZitfO3P4Z",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1ahmNI1R6WkkvLuJ6doDTd68QxdoKzlRa",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1sre-Syas6aL-j9yjJGrOETwY4pGbH8FY",
+                      "type":  "FILE"
+                  }
+              ]
+}

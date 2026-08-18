@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Excavator Fab365",
+    "id":  "1yFjomLVbiRXB720XCGC2bx7_CmQiMiz-",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1N2S_0uREFfHwvhPg0rP37IH8TvP-J63o",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1JHOhnw2kOCbxTNV_Vz0kxPHi3gS6su9F",
+                      "type":  "FILE"
+                  }
+              ]
+}

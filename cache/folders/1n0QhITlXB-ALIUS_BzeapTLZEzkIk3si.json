@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Cascavel",
+    "id":  "1n0QhITlXB-ALIUS_BzeapTLZEzkIk3si",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1LvP-qkKWMrCQfX1q00Zrrzgeom0OGfxi"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1DoxU3rEb2Z98key7DsKjn5GWGTxXHbRi"
+                  }
+              ]
+}

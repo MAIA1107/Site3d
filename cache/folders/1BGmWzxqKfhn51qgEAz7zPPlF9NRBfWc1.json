@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Parasaurolophus",
+    "id":  "1BGmWzxqKfhn51qgEAz7zPPlF9NRBfWc1",
+    "items":  [
+                  {
+                      "mime":  "",
+                      "name":  "1.mp4 Video",
+                      "id":  "1kQmOER1yk94nYsOrYL6VlzkuHVgXJDzf"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "stl.rar",
+                      "id":  "1LJYfBVpwvytySilOsu6bKVili52UASD8"
+                  }
+              ]
+}

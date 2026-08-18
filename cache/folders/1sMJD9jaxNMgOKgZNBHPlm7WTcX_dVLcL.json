@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Chaveiro Pokémon 2 ",
+    "id":  "1sMJD9jaxNMgOKgZNBHPlm7WTcX_dVLcL",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "2025-04-14_183334d032f698.webp",
+                      "id":  "19XJZeM1xd90QNswjFTWWfIvOsBx3LOWM",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Base_3stk_groser_rahmen_A1_Mini_stls.zip",
+                      "id":  "1YLAIE63tkK_Dnz7-BsTN7K11CD65wiBU",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "bisasam_neu_A1_Mini_stls.zip",
+                      "id":  "17xuCMOvmOvYfvuevqF-8mwzMGK3Zg7jX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "glumanda_neu_A1_Mini_stls.zip",
+                      "id":  "14mDddAlktTf-rrDWwQtcNbLQAbEwGaNF",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "schigi_neu_A1_Mini_stls.zip",
+                      "id":  "1Q2cZaTVZMMRXl2VKYjhQ5IYgtdXTzc0n",
+                      "type":  "FILE"
+                  }
+              ]
+}

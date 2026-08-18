@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Plakit - Chaveiro Mercenario ",
+    "id":  "1Ng6YrD5-juVIMj1Ksh7lXfX-UByWRjRn",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1bqWRC0-m6xYmVKcoB3BNT4p6Z-Y95YA9",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1_9k0Iwzz0e1xovdxpdOHTeQhSE8YLEcz",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1npfJFlDvP1MK7ZAtDsajGxeKa0Ex8gGn",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "1VyU6vlk3H_OwIwSHNW3pSCdfP6Wvn_3l",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms2_Bullseye_Rev1.rar",
+                      "id":  "1jsKoLfQcwW9l5SjiYHddv8L8JkU_MZD4",
+                      "type":  "FILE"
+                  }
+              ]
+}

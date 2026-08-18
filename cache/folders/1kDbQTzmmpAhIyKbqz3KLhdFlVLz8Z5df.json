@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Plakit - Chaveiro Coringa ",
+    "id":  "1kDbQTzmmpAhIyKbqz3KLhdFlVLz8Z5df",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1j7Btoc80fF6qij07HQG0a_u-yvoFrsyf",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1EbaqUWzaIN1Pc-QpN7EUV_bAzf5MUNBt",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "17QwCRVubhHv1AGoJ-bQaRYgh5LTHi6Ge",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "1xV08ljKSk2Ku5WPH7KEs2Ovouii_T_pi",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms2_Joker_Rev1.rar",
+                      "id":  "1XB-4i66rqbF9Smq8nryy4HdWdpxJMaWx",
+                      "type":  "FILE"
+                  }
+              ]
+}

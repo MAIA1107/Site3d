@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Dancing Skeleton",
+    "id":  "1FE6UfCpTgpEehsMgra2sx272_aq2RKBH",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Dancing Skeleton.jpg",
+                      "id":  "178DI5ZvUovqs59Ud_o8r6-zsLMWVvzOU",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1H1TwNtiAHjJIIbmYWjqGaPAOqPUdqRnK",
+                      "type":  "FILE"
+                  }
+              ]
+}

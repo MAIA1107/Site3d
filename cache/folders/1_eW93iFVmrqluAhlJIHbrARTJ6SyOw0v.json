@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Flexi Charmander",
+    "id":  "1_eW93iFVmrqluAhlJIHbrARTJ6SyOw0v",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "flexi_charmander.jpg",
+                      "id":  "15WTYW9tx6ekY4AYvcQ1xWD_HBM3DRqcI"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "flexi_charmander.rar",
+                      "id":  "1-Yj_AdKt5Ip4VeS6pRSmGfhzytGYmhrL"
+                  }
+              ]
+}

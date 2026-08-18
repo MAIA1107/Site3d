@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Flexi Mario Bros",
+    "id":  "1gDFGBqti5Gphn4UwwsZtQAPC8BMFptJz",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Mario_Bros.jpg",
+                      "id":  "1eZQ0seDygJ3bKQYUIJjZZlaj2Mg-YPnm"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1lSptTDtdVwjxvM6Xha4H88zSbbQt4mfp"
+                  }
+              ]
+}

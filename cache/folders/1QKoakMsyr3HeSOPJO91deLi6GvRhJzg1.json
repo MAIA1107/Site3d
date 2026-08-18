@@ -1,0 +1,21 @@
+﻿{
+    "label":  "Chewie_Tiki",
+    "id":  "1QKoakMsyr3HeSOPJO91deLi6GvRhJzg1",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2020-08-07_21-27-38.jpg",
+                      "id":  "1lss2j2gkWXFHAuNYWPGz4cl3m3FcI58m"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Hex3D_Chewie_Tiki_FlatBack.stl Unknown",
+                      "id":  "16NaDxP5NB2_77xODNzkLd1Rj2I2JcvF-"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Hex3D_Chewie_Tiki_FlatHead.stl Unknown",
+                      "id":  "16h28YlhDmFXySixvbR_l1k9fwldhQaHJ"
+                  }
+              ]
+}

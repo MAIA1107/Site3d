@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Kadett",
+    "id":  "13txEOgBVJGHWmXZlP6BIm7-EjqAzNQUl",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "19rprZErZ-IlQt6UJ3R5hSxcn7zFhLmYZ"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Opel_Kadett_E_Hatchback_3door_1991.rar",
+                      "id":  "1FDIWm1AnyEjNrMQqzi8j0a_tuF2tsmqJ"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Batman Classic Bust ",
+    "id":  "1UUOhfsWuWeIZDjtqOHfK3-LrPz8mvfRD",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1tp6GSh5kAWWTLegzL1ph9AwVWB8fP8dX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "174amLAdGWRlGVhjyL0E0h0sUAwnidcyz",
+                      "type":  "FILE"
+                  }
+              ]
+}

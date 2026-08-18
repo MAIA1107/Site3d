@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Flash ",
+    "id":  "1KGCezVHqTI1wy6ZiQaj_5vu9ZLIumFd7",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1AQnHugJIWhidGiJl8fwCh1po8l53bmbK",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1YJxxAe0E7ow3o7vwVjhq1CpmrVaYBlZG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "194ndBDbsihUrMWl--18N2O9h0bWaFjSV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms1_Flash_Rev1.rar",
+                      "id":  "1KdfbQbaLnIW1IzJ9X7fd7SfDoikKcXfq",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,24 @@
+﻿{
+    "label":  "ABC Warrior Bust ",
+    "id":  "11LBtNG-jSr8JkbYK6GUVzz2DIn0WaaUS",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "ABC   Warrior.jpg",
+                      "id":  "10z1VU3Bshm0_w8qASMHq5F9VWBaOULae",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "ABC Warrior.JPG",
+                      "id":  "1N0h2xKrEQByTmMBrCEihZ6qyE3ceWtzC",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1_6YMzKDJ4EM4LGmu5krvrBnU6H1IuuGc",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Mandalorian ",
+    "id":  "1UwXUBaW6D7s-NgtK7n4q7j4uZarFv5Go",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "18IIuWtdXXfk-5uNxp1V9jFWwzVsXHugi",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "14KVBRUW5TK3vVL_u57E0xq1OL3Vl1B8d",
+                      "type":  "FILE"
+                  }
+              ]
+}

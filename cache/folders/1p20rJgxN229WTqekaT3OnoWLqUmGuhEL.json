@@ -1,0 +1,930 @@
+﻿{
+    "label":  "LUMINARIAS",
+    "id":  "1p20rJgxN229WTqekaT3OnoWLqUmGuhEL",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.JPG",
+                      "id":  "19w_6T0T2WZTwNzHSMgHCmnvDY1ar5a-P",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2.JPG",
+                      "id":  "1yHNicUy3RLEZwDU_9yI3JorfqoP4RWBY",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "3.JPG",
+                      "id":  "1ULRUZgZ945yF5toZ-5_YgDUV7IFsMyGV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "4.JPG",
+                      "id":  "16wzXlyTGZ9kY7qCvo85O82R2pkdhN616",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "5.JPG",
+                      "id":  "1WrgiF4-aXaT5c5lFvxDUsw0EYycl5_G8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "6.JPG",
+                      "id":  "1xQdLf8Ajgv3D8wGQVRaWkGWFjKSSgb7f",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "7.JPG",
+                      "id":  "1fJFchJZSVtgslT8hITON0SEDGiDA4CZh",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "8.JPG",
+                      "id":  "1s1ExqrU1PZZnFMqJUNGujIB5MngXajmO",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1xzn6U7tqQsuQ-UgU_f0F9hcLcneLDJRG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1B6C-bqoTuPoxSy_3aGQrFdymxsdOQ6qv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1ArXMh5QawRmvVCppDwl6txy6NkSZxlxY",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1dpY9ET3alQ435e2ljB13ZpeeBWML8v0b",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1tpFbs-O_zprgOGdvdNo3DW-xVsMlp-Ii",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Opera Instantâneo.png",
+                      "id":  "1qstakmISq19RwXiNEWjhXdfVc5T8LEvv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1HdsaIE5pLRDF8murocUA4ccRh2vH_WPg",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Dark_Crystal_lamp.jpg",
+                      "id":  "11sJaB5WGMUXaeJMGNPzb903WjQMESYzX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1ByyRXH8aaVebJmxbqNpnK4GYof_6zyrV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "05aa6e927f125fe46f282b00f5e7937a_preview_featured.jpg",
+                      "id":  "1Bl6rTZYF10Mx0M6BY-OkD6zsPdZk2LKd",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "5d26260f154dfd178cc898d1d114fcbe_preview_featured.jpg",
+                      "id":  "1YJ0laqmoNTKmMtaFNdKQnO-QUvaNlATw",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "f6e4eaaf0413f0f6c910a195b9a934d6_preview_featured.jpg",
+                      "id":  "1lEX93A6Kozbh0sXYMhJvZCGhiYQ2KGMh",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "fa55b015ae449321e29dc105dde9ed32_preview_featured.jpg",
+                      "id":  "1V1J11Kj7_acItzWgOBaEiWWPMgLMwZSZ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "BOTTOM_BASE.stl Unknown",
+                      "id":  "1jRk2OrE1_svpse4Z_wpQ-H0DGc_kWnnN",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "MEDIUM_BASE.stl Unknown",
+                      "id":  "1Ug1cSHxr5XrmnW45xi4c-bM5W1HzUr-W",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "UPPER_BASE.stl Unknown",
+                      "id":  "1tAM45N2rygfjzVtVYcx8GfYuRDJd2hZD",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "world_light.stl Unknown",
+                      "id":  "177gFjkAAeVb2NroTaeojPO6klq774qC3",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1px8xoyePvTWv2fmBTaacQD7xaKv3yjvq",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "12yhXNwlb7vFfeT3GbEW5TtsT-l-iji20",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1syBclbFGUwBWJGhWGwGdrJkLrvaWTO7m",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1L0NiXHHjDw3IJ9w5vj6qoVu_cTm5-Ma-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "19bWmdj2afQKTDNTimaAy2TzMFCfwMWZ4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1mFXvLPLXKa1rHa-VUDw41yUTDBGcDxsl",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "1.webp",
+                      "id":  "1E3_UFT53LD_IB0Z7mp70NC6xmWF_Scoq",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1i6E2VfFpclcjurWHsg3PQnp4MTGeUGOH",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Jellyfish_lamp.jpg",
+                      "id":  "1WeGu2we9mU3FEDNb0uBzrRATwEfVYSRz",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1u07DMOXUgnxwHtyPOoOsmHH8sCFRJgv7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-10-17_11-48-41.jpg",
+                      "id":  "12IQ1D66lIO1kTcn3M7KK-V9Nq4FaeNpW",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1jd543359WscQ5tUwsGduzThB4o6uMrg3",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1RtiYrog1N5eRMU5y62WMDFF65PZeGAhr",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "16MoTUaPpHYZi0foYD3GrRCWr5ZhOoKMe",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1tyPdqPtA7NIHqzXl64FUHK-PFdeD0GOC",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "1PNmKbtjMo6YOpTkRiHTqCg5vVfv5F4W5",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (5).jpg",
+                      "id":  "1bGxsrVWFZfRELXBC4cIhKJYd2OmoCF0W",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (6).jpg",
+                      "id":  "1H44LNzLUq4Jj-M1NHBh7xMTgym_1cYxB",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1kjrIbvaxhGUwBKKqOhmR--iStxLBHdbn",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1TZFhMsLZ0sSRa0KnTBUkGzwEi3nqupLc",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).png",
+                      "id":  "1Gl8vtu5qOgVYBxsNYXZGniqkigRFHGU7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1tgywp6-jNK-WwPbFpuFTFydrmUoCpCz8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).png",
+                      "id":  "13prjCrMcb3yyEY_JxVmGLZycZlTYz2ci",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).png",
+                      "id":  "186-6OuEloCkm2bOvq-1gl6YY-hmv4RAR",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).png",
+                      "id":  "1rMZvqbjtBK7RzDd8lvVy79Dt1j227dGk",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (5).png",
+                      "id":  "1e12cu6IW0AybMLoxTQGdNJ5cClAsfEu5",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (6).png",
+                      "id":  "18GjC_IbkeW1-zaL0bZoC8vrBqU0Et-6i",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image5.jpg",
+                      "id":  "1c9v5r4KaPcKlkNMfubwwayWj_fkEkOeS",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image9.jpg",
+                      "id":  "1xJAicMvB2BQW1A08byn5FvAcNjbXlhNY",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image12.jpg",
+                      "id":  "1w1bpLtPK85BIe5z5uFb2CRuZecuIHuPJ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image13.jpg",
+                      "id":  "1rgon3Bd-V7s7Yrr5Gf-qvumu1GjXHrH7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image14.jpg",
+                      "id":  "1TXpMeU_yu9bk76gHcdYr5K_8swsJohT4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image15.jpg",
+                      "id":  "1CuunjImIZ0nYE-glXiG3na6vahd0B45p",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image16.jpg",
+                      "id":  "1k3Zp7-7JtWmcAlzrJRh3f07-ESPs8Dl7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image17.jpg",
+                      "id":  "1U9C325HunOOXlRThgCj5t8lHm_g1_Woj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image18.jpg",
+                      "id":  "1949sW-HFYRbIsXqwVgHw2ru9DNaQw37k",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image19.jpg",
+                      "id":  "1MMvQ2egDq38tpX7yDbck8rthaPJBB3RS",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image23.jpg",
+                      "id":  "1sgWaSxurHN-v8nXQkM9D5rdjX4_6UzZu",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image24.jpg",
+                      "id":  "1Kw1xHvAzXDR1zg29867Y2bgUuZTGfiYh",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1p9GolTBPcjKwdSvyl4e9NDEpoyxO5cEH",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1HZIiOPw8vbjOyC2ti62_htnwaPSxZjRm",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1rr02V2xjusN-IvcSi68NrjmPkrZaZXqP",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1HODJ3aer36vv0Mvu0UnUnC3jDl5SYISM",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "1XdIFxdT7DqJHWKj8OROKx9Ww4MSd4-QY",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1EiLXYeDRAtqfBzbQRd1blphm7imXl7R-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1RI-q5eZJV5skUbNJHsJGZs-HOZPVFka7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).png",
+                      "id":  "1knsPVwhjaeNhz1ez7VUhdWcqTtMm_tpi",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1V33y9pbVhpWqVw5vVub4Nd-hH4MdSBVH",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).png",
+                      "id":  "1REy2agJuKa_ECg8SAySnHRrJw6IQ7QR0",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "13kbNe30lCxuBvaGj0mgvN7Uu4NnGQTBv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1a0hKHnmCQ7baL8EDNpgJiDd3q6WPFXCY",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1pTDShd7nXpgGN6BlEmx5CIKEq5gl8R0u",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1p7U39fNzrBlE4mb1Eo8WEt7ZeRQeysJf",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).JPG",
+                      "id":  "1TVtD5SlfnYjEZqOVZmhRzJY4Vu4m0hRq",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).JPG",
+                      "id":  "19dcvLVSIk-UshgPEpah8ma_Nl8Y2qKM4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1STZS5FsjXBzF9ZANAvYUBGMKQ-_3Sw7T",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "113WxSOaTU-W03o3TRlrM5MTj_9yS8hxu",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Skull Holder.stl Unknown",
+                      "id":  "1znJAw7gMn9QNquVUVN7Wl057ljx5nM_g",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1aM3_FhXNsikSXxXT9TsXR-zcmaeSFhq7",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "ciudad_agujereada_2.stl Unknown",
+                      "id":  "1wk6j_b-0uyVZ8CL10zbvYebmuhCqSwWR",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "18I88bgUBc8Kq71YAvjZY6u3ouEHnI0Bv",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "ml44.stl Unknown",
+                      "id":  "125hc1OCEP1hYJXG-LAy40YNh6AMZev9k",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1_TzMhUKCNGH2p20_7zC9X4BicKuZVUN-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1mDAB-hTC2vduu7mEzqLPboSEiBTefKWH",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1Kl5f8ZQAc1tsWWzWI1SlskG2mDEUifF-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).jpg",
+                      "id":  "19qL9SHOXDEyE9PbfLt4xnX2vdJXkvKQw",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (5).jpg",
+                      "id":  "1KZsoA6cOfWlJ7cG4pNL4o5hjO44k1fY-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (6).jpg",
+                      "id":  "1xH15zYm3LXaf0cwcdE6iZIUFbnQir4b4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1siJ7m6xiBMceqWT2OQAEn_2DtJs2f5U8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1VwzgiSo_Bl3T4JDEtBYk3Be2ig7ru0kt",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1DMRxvrkpNlA328pRnuHAjuSqsEfucatm",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "owllamp.stl Unknown",
+                      "id":  "1fx0t4ysmXDzBNlSu1PxLIqORyalIGMr4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.JPG",
+                      "id":  "1h11p1K6UFNndqKHP5gOW9bX5ntC5enjX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1dh2-p93u9JQn3SOgE0P1scpZ4yJe0AkV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.JPG",
+                      "id":  "1-_B7R6-XVLAnnwiZ6l3c5-QiM_3oo5sd",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "140BGZZiJfAgTvKe6Q_ZQhyj0As-DcOZG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1LzN9YWI-latOtNwgQo-RW5nf2mLnL5uZ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1U2NEAMQ055x9-RG-hHs2OhuAewd_swyj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1zWu_ZKotR5Jz4BNr8QagnCH45kJrS1A4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1tpyvC84eli7qdVev5sag89bkEMPDLlkU",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1-zXv1rMnD3CJy-NfDFYTXuB7PJqmKaUO",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1c1gSVNqxsLGmqzPaMB3jNsiV_Q9RflvD",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1LrnhJ-JGhsqJ1HBW26VYCNqk9W8eG3B_",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image1.jpg",
+                      "id":  "1BpV9ObFSR2kN4IOvrRamOOKHLdy5lQn1",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image2.jpg",
+                      "id":  "1rhnLpKOPjghLky6LO0hhKUvrhZxLcaZ9",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image3.jpg",
+                      "id":  "1mhz7B07yNYOu1lKNEAbG_K8Jm9K9qcJe",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image4.jpg",
+                      "id":  "1o9ZKhKBejmLfYO6K3ETItCG8nCVPzLSw",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image6.jpg",
+                      "id":  "197BSkhOEpvxPbVkXesYYJlS5g51LWsOh",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image7.jpg",
+                      "id":  "1nmJFaaROzYojTf2SgddqC3J3d3TVKi1Z",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image8.jpg",
+                      "id":  "1K63uE1VHWcIAXyRT0lBATjjv49q0Lv60",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image10.jpg",
+                      "id":  "1i3LpHAefphqoTEgVQdnKpbFfvq4LYO2m",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image11.jpg",
+                      "id":  "1mprjwsI9vlxPzJGLAR5w8TgINESU_1mm",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image20.jpg",
+                      "id":  "1VRA0hjVJyrksIPD4mnO4HY1KhPdpiqQZ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "image22.jpg",
+                      "id":  "1xAm5fLlIcbvh4Qjgr7gTO3YnYuocWTOQ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2025-07-10_57d32de52de94.webp",
+                      "id":  "1uJ6vMeOt-1JDE6dlLpSy5oPmKPDATQ3T",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "H2D+Moon+Lamp+Bambu+Kit_stls.zip",
+                      "id":  "1yUulXQVKyXZS_tsILmctWvzpphqvRyG4",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1yp47xnZIuVbdIPrZvnnWGVayJUoX3yqk",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1SMEA2T0wGTW417tboSdAVm29j6_iGecJ",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1EckopI_DN1ssZVPmxgcyPhGVSWTW5Ryb",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1BhLzFAB-AkVtiEloGnCNCrMJlZDOdKV3",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "19zDHVBXjqFA8y_izXcEJ761e7qmq9LbB",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1SVJOCTDBsYiJtyEXwjcJwk_yKYM5kBTX",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "sound_of_silence_litho2_2.stl Unknown",
+                      "id":  "1owgm30XWWXFPfFRRsOwBmuPtat3icKN6",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1gS-dadk3WYvnH390Sw1In4djG9TtB6la",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "orchids Lamp.STL Unknown",
+                      "id":  "1fXQQ0UzEdGaYIeol5M87UkX9j0o_iuF0",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "15Z69hwBdALD7x6FLwFaoFPgO3NCjJ38s",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Pillar of Skulls.stl Unknown",
+                      "id":  "1Co8rSmYaIi290cDV1ioQqQNvXutK6BPk",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1T6ZFzMB-GXc9cqyK51cBNevQXStcPHwf",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1JthyiU8eOyj54voDUQzctgDoT3GNmWV-",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1H4KPRzIoyRYO11ic5WXFeZMbsfpUZOkf",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "11InXZ9c0QmOe5m7_4Ho5EGYAKSXazFBb",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem 2.jpg",
+                      "id":  "1llH8fE6i5SDuSwbQ6qZ7JZjbMdBYNJpG",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1ViWxxxWp0edVLthmqV7g72OZ2OjYaEzj",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "12JCcrpNKAGm2TAAufm1yRNexzjGraZf5",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1wZkA-TNxZVC73T4gaJ6Qb_WtZhvqYSUW",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "14PpF40vguUrAQvaUvnMC1DndfTnm8HBe",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "1.stl Unknown",
+                      "id":  "1MH_XF2amrOkZM6lMR6U6l5tJJrd0PYpr",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "2.stl Unknown",
+                      "id":  "14Fa9PT2W9FgtTWhY8gNPc-RIYSurDH5S",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1Zs9hGRH7Dn_471NMCRtFHISEgMiTBOeH",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "Hand-Support.STL Unknown",
+                      "id":  "1Gmk7r72ihj3afSQwScCuAbZPl1zbR3VD",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "",
+                      "name":  "HandBolbLamp.STL Unknown",
+                      "id":  "1sDlpYZEdlanP3FsIg8B1TjLsdMQHRH5k",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "photo_2021-06-09_23-09-32.jpg",
+                      "id":  "1If33-xGMTlWBuh2f0_WDI9QwZW9D03Ji",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1o9GfBjAZYHlZmfKDdfZVJxfkbUqahLjp",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "19hhGWqbJkqsTKy-UBRjPCnqkebShiSH6",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "2.jpg",
+                      "id":  "1eFccdW6siwM1iAFz9WBGl8gSJC0Jm9IT",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "3.jpg",
+                      "id":  "1AM5atudwcWrvIkrqEAxoZJDrA9QktBEs",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "stl.rar",
+                      "id":  "1AOeVVaY40cAnXckN62-maq6sLN064dDE",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Saturn_V.jpg",
+                      "id":  "15-av4GFjrdYVi6ymPCzlK1tI9yer3pFR",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1qW_trQzRHMZnS5H-9Oh9G8Qre8njBR0R",
+                      "type":  "FILE"
+                  }
+              ]
+}

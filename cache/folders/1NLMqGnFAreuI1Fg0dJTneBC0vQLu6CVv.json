@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Sheep Articulated",
+    "id":  "1NLMqGnFAreuI1Fg0dJTneBC0vQLu6CVv",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "B.jpeg",
+                      "id":  "1_Muqn3FAK_62JmGA94785H4SnvZswNo7"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1XL2DTH-yqn6UusIjEq2jywy_4-FBonJy"
+                  }
+              ]
+}

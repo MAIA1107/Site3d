@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Flexi Monkey",
+    "id":  "1EkTnYWR2anHAZmVkbekmxA3zOvvNma8o",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "1yHaWViEzDyexlKSOODX2Uy4Jl5PgIu6e"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1xQiy9fF26HPNp-konI2GBIaAkOoZiJcO"
+                  }
+              ]
+}

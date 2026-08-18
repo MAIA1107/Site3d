@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Coringa Busto ",
+    "id":  "1apiLPnvihXX3KNSEaGVO1FJItCJYPMOH",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "CGTrader_JOKER_bust.png",
+                      "id":  "1dY96zfV3G3EGv8E9F3GtGF_hmr9aHUXe",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "J.rar",
+                      "id":  "1uOCccPDYUvUpmxMnyU7Z_vbwnpUmJ9Cb",
+                      "type":  "FILE"
+                  }
+              ]
+}

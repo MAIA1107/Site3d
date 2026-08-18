@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Articulated Dragon Wyvern",
+    "id":  "1O23avCEgG-lVnp41sfzPE7eT1BN-kAUl",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "1.jpg",
+                      "id":  "14bAnifJA9UMi8Prech0euJWjfrE3rtuU"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1rTaplHWx2usezjxXtMYVrsQ0UifPkrb7"
+                  }
+              ]
+}

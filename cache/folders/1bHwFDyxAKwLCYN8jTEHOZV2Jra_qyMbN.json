@@ -1,0 +1,36 @@
+﻿{
+    "label":  "Plakit - Chaveiro Esqueleto ",
+    "id":  "1bHwFDyxAKwLCYN8jTEHOZV2Jra_qyMbN",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).png",
+                      "id":  "1inubfhLew7jXyOmpZlV8ta-yrLtno5ZV",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).png",
+                      "id":  "1ct4cdrknC_ebrWkQZQwnA47I2-nehC1b",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).png",
+                      "id":  "1XCqHlvJDvSmf7B_MzhF-UDaPSbmx_zbM",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (4).png",
+                      "id":  "1NXzSmBho5vhfvEcxHTyCuLXXU-Ap3rAx",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1W8n95h0Uw0_3DIn6uOteXbw8K0D6Kw3-",
+                      "type":  "FILE"
+                  }
+              ]
+}

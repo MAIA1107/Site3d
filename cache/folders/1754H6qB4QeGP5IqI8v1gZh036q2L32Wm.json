@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Frankenstein ",
+    "id":  "1754H6qB4QeGP5IqI8v1gZh036q2L32Wm",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "1-SIaA1B6QwmirAoqfeAQD2kx1RvukHWt",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1SsbI0eo_qF6RgKnBLs-PlDPyny7TNuhh",
+                      "type":  "FILE"
+                  }
+              ]
+}

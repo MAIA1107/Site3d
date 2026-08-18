@@ -1,0 +1,16 @@
+﻿{
+    "label":  "GOL G2",
+    "id":  "1FQ5xWW-ugN9okfQX_KPjQ8xV8oiYJkt7",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "GOL_G2.jpg",
+                      "id":  "1_wM_iWBJup6o85K675MfyncjqBEXvSBB"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1OkQ0baeqmhZzoq4ZawJTOzh59rlMIeJt"
+                  }
+              ]
+}

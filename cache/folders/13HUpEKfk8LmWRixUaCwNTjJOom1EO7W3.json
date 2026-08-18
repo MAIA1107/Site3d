@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Busto Trump ",
+    "id":  "13HUpEKfk8LmWRixUaCwNTjJOom1EO7W3",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jfif",
+                      "id":  "1fH2YsqsqFkquFlLQCUhga-HbZug8W_q1",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "Trump-bust.rar",
+                      "id":  "1L1aU35SE-uVX07CvVu1UaOmtkFL_hxA5",
+                      "type":  "FILE"
+                  }
+              ]
+}

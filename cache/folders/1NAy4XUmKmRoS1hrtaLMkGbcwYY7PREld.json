@@ -1,0 +1,30 @@
+﻿{
+    "label":  "Plakit - Chaveiro Boba Fett ",
+    "id":  "1NAy4XUmKmRoS1hrtaLMkGbcwYY7PREld",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (1).jpg",
+                      "id":  "1ZVZhEvdXBMAbplJvqKMZyE0rdbKmbugE",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (2).jpg",
+                      "id":  "1qdW9-T4xwPfsRzW_1rOLr4F4boey0AKS",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem (3).jpg",
+                      "id":  "1uuPr0mKMT1V4exEFHF_hHRWXLfoS8JG8",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "PlaKit_Charms3_BobaFett_Rev1.rar",
+                      "id":  "1ZBiTGWzwVzFU1AqEHekAL92rBnP-9-J9",
+                      "type":  "FILE"
+                  }
+              ]
+}

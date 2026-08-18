@@ -1,0 +1,18 @@
+﻿{
+    "label":  "Bust No Symbiotes ",
+    "id":  "1vy_muZhQIpNYB5B3G7mqCHNXc3jiF7E0",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "109FLmJ7q6QAseI_iU1wvC4elwgyKlQ0o",
+                      "type":  "FILE"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL files.rar",
+                      "id":  "1VN6ddSBkOLYV23cUhGDlMBaS5paO3KIh",
+                      "type":  "FILE"
+                  }
+              ]
+}

@@ -1,0 +1,16 @@
+﻿{
+    "label":  "Ferrari 250 GTO",
+    "id":  "1fjW6lDbJ2PdH69DKmdnD8ElgGKfN2iX0",
+    "items":  [
+                  {
+                      "mime":  "image",
+                      "name":  "Imagem.jpg",
+                      "id":  "11WakIdBE4wA8SsjDH51YPzITrIPBbcK4"
+                  },
+                  {
+                      "mime":  "archive",
+                      "name":  "STL.rar",
+                      "id":  "1MYFyyySiKN912SjSuCLIMICbCT8tq2Hp"
+                  }
+              ]
+}
