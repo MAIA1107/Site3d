@@ -380,12 +380,23 @@
 <footer class="footer">Arquivos hospedados no Google Drive &middot; gerado automaticamente</footer>
 
 <script>
+window.onerror = function() {
+  var o = document.getElementById("loading-overlay");
+  if (o) { o.style.display = "none"; }
+  return false;
+};
+setTimeout(function() {
+  var o = document.getElementById("loading-overlay");
+  if (o) { o.style.display = "none"; }
+}, 3000);
+
 __COLLECTIONS__
 
 function _dc(s) { return decodeURIComponent(atob(s)); }
 if (typeof __ENCODED_COLLECTIONS__ !== 'undefined') {
   try { eval(_dc(__ENCODED_COLLECTIONS__)); } catch(e) {}
 }
+
 
 const tabsEl = document.getElementById("tabs");
 const container = document.getElementById("container");
@@ -409,7 +420,6 @@ function buildGrid(coll, active) {
       ? '<img class="thumb" loading="lazy" data-src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
       : '<div class="thumb placeholder">' + it.title + '</div>';
     const label = it.label || 'Baixar ZIP';
-    const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
     const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
     card.setAttribute('data-href', href);
     if (it.link) card.setAttribute('data-external', '1');
