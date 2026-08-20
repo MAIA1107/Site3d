@@ -461,7 +461,9 @@ async function main() {
 
   // ── rebuild page ──
   const tpl = fs.readFileSync(TPL_PATH, 'utf-8');
-  const page = tpl.replace('__COLLECTIONS__', js);
+  const encoded = Buffer.from(encodeURIComponent(js)).toString('base64');
+  const encodedVar = 'var __ENCODED_COLLECTIONS__ = "' + encoded + '";';
+  const page = tpl.replace('__COLLECTIONS__', encodedVar);
   fs.writeFileSync(OUT_PATH, page, 'utf-8');
   log('PAGE OK: ' + OUT_PATH);
   log('UPDATES: ' + sortedUpdates.length + ' items');

