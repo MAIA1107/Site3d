@@ -424,7 +424,7 @@ async function main() {
   const sortedUpdates = updatesItems.slice(0, maxUpdates);
 
   // ── emit new_collections.js ──
-  let js = 'const COLLECTIONS = [\n';
+  let js = 'var COLLECTIONS = [\n';
   for (let k = 0; k < blocks.length; k++) {
     const b = blocks[k];
     if (b.updates) {
