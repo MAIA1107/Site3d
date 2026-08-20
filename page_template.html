@@ -414,7 +414,6 @@ function buildGrid(coll, active) {
     const thumb = it.img
       ? '<img class="thumb" loading="lazy" data-src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
       : '<div class="thumb placeholder">' + it.title + '</div>';
-    const label = it.label || 'Baixar ZIP';
     const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
     card.setAttribute('data-href', href);
     if (it.link) card.setAttribute('data-external', '1');
@@ -426,7 +425,6 @@ function buildGrid(coll, active) {
           '<div class="card-title">' + it.title + '</div>' +
           '<div class="card-sub">' + it.sub + '</div>' +
         '</div>' +
-        '<a class="btn" href="javascript:void(0)" data-href="' + href + '"' + (it.link ? ' data-external="1"' : '') + ' onclick="event.stopPropagation();openLink(this)">' + label + '</a>' +
       '</div>';
     g.appendChild(card);
   });
