@@ -389,7 +389,7 @@
 <script>
 __COLLECTIONS__
 
-function _dc(s) { return decodeURIComponent(atob(s).split('').map(function(c){return '%'+('00'+c.charCodeAt(0).toString(16)).slice(-2)}).join('')); }
+function _dc(s) { return decodeURIComponent(atob(s)); }
 if (typeof __ENCODED_COLLECTIONS__ !== 'undefined') {
   try { eval(_dc(__ENCODED_COLLECTIONS__)); } catch(e) {}
 }
