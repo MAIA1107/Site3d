@@ -53,7 +53,10 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 1px 3px rgba(60,64,67,.12);
+    cursor: pointer;
+    transition: box-shadow .15s, transform .15s;
   }
+  .card:hover { box-shadow: 0 4px 12px rgba(60,64,67,.2); transform: translateY(-2px); }
   .thumb {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -82,18 +85,8 @@
   .card-title { font-weight: 600; font-size: 14px; line-height: 1.3; }
   .card-sub { color: #5f6368; font-size: 12px; }
   .btn {
-    margin-top: auto;
-    display: block;
-    text-align: center;
-    background: #1a73e8;
-    color: #fff;
-    text-decoration: none;
-    padding: 9px 12px;
-    border-radius: 8px;
-    font-size: 13px;
-    transition: background .15s;
+    display: none;
   }
-  .btn:hover { background: #1765cc; }
   .footer { text-align: center; color: #5f6368; font-size: 12px; padding: 30px 0 10px; }
   .config-panel {
     display: none;
@@ -417,6 +410,10 @@ function buildGrid(coll, active) {
       : '<div class="thumb placeholder">' + it.title + '</div>';
     const label = it.label || 'Baixar ZIP';
     const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
+    const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
+    card.setAttribute('data-href', href);
+    if (it.link) card.setAttribute('data-external', '1');
+    card.onclick = function() { openLink(this); };
     card.innerHTML =
       thumb +
       '<div class="card-body">' +
@@ -424,7 +421,7 @@ function buildGrid(coll, active) {
           '<div class="card-title">' + it.title + '</div>' +
           '<div class="card-sub">' + it.sub + '</div>' +
         '</div>' +
-        '<a class="btn" href="javascript:void(0)" data-href="' + href + '"' + (it.link ? ' data-external="1"' : '') + ' onclick="openLink(this)">' + label + '</a>' +
+        '<a class="btn" href="javascript:void(0)" data-href="' + href + '"' + (it.link ? ' data-external="1"' : '') + ' onclick="event.stopPropagation();openLink(this)">' + label + '</a>' +
       '</div>';
     g.appendChild(card);
   });
