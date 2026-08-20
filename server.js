@@ -11,8 +11,63 @@ const REBUILD_SCRIPT = path.join(BASE_DIR, 'rebuild.js');
 const UPLOADS_DIR = path.join(BASE_DIR, 'uploads');
 
 const SCRIPT_INJECT = '<script>window.__SERVER__=true</script>';
+const CACHE_DIR = path.join(BASE_DIR, 'cache');
+const TPL_PATH = path.join(BASE_DIR, 'page_template.html');
 
 if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+
+function getUploadCards() {
+  if (!fs.existsSync(UPLOADS_DIR)) return [];
+  const extMap = { '.jpg': 'image', '.jpeg': 'image', '.png': 'image', '.gif': 'image', '.webp': 'image', '.bmp': 'image', '.svg': 'image', '.stl': 'model', '.obj': 'model', '.zip': 'archive', '.rar': 'archive', '.7z': 'archive' };
+  const thumbExt = { '.jpg': 1, '.jpeg': 1, '.png': 1, '.gif': 1, '.webp': 1, '.bmp': 1, '.svg': 1 };
+  const files = fs.readdirSync(UPLOADS_DIR);
+  const items = [];
+  for (const f of files) {
+    if (f === '.gitkeep') continue;
+    const ext = path.extname(f).toLowerCase();
+    const name = path.basename(f, ext).replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+    const enc = encodeURIComponent(f);
+    if (thumbExt[ext]) {
+      items.push({ title: name, sub: 'Arquivo local', img: '/uploads/' + enc, link: '/uploads/' + enc, label: 'Abrir' });
+    } else {
+      items.push({ title: name, sub: (extMap[ext] || 'Arquivo') + ' local', img: '', link: '/uploads/' + enc, label: 'Baixar' });
+    }
+  }
+  return items;
+}
+
+function quickRebuildAfterUpload() {
+  const cachedPath = path.join(CACHE_DIR, 'new_collections.js');
+  if (!fs.existsSync(cachedPath)) return false;
+  if (!fs.existsSync(TPL_PATH)) return false;
+  let cached = fs.readFileSync(cachedPath, 'utf-8');
+  const uploadCards = getUploadCards();
+  if (uploadCards.length === 0) return true;
+
+  const sanitize = s => (s || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+  let uploadItemsJs = '';
+  for (const it of uploadCards) {
+    const t = sanitize(it.title);
+    const s = sanitize(it.sub);
+    uploadItemsJs += '      { title: "' + t + '", sub: "' + s + '", img: "' + it.img + '", link: "' + it.link + '", label: "' + it.label + '" },\n';
+  }
+
+  try {
+    const fn = new Function('return (' + cached.replace(/^var COLLECTIONS\s*=\s*/, '') + ')');
+    const collections = fn();
+    const filtered = collections.filter(c => c.name !== 'Enviados');
+    filtered.push({ name: 'Enviados', items: uploadCards.map(it => ({ title: it.title, sub: it.sub, img: it.img, link: it.link, label: it.label })) });
+    let js = 'var COLLECTIONS = ' + JSON.stringify(filtered, null, 2) + ';\n';
+    fs.writeFileSync(cachedPath, js, 'utf-8');
+    const tpl = fs.readFileSync(TPL_PATH, 'utf-8');
+    const page = tpl.replace('__COLLECTIONS__', js);
+    fs.writeFileSync(HTML_PATH, page, 'utf-8');
+    return true;
+  } catch (e) {
+    console.error('quickRebuild failed:', e.message);
+    return false;
+  }
+}
 
 let rebuildState = { running: false, output: '', exitCode: null, done: false };
 
@@ -174,6 +229,7 @@ const server = http.createServer((req, res) => {
             saved.push({ name: safeName, size: part.data.length });
           }
         }
+        quickRebuildAfterUpload();
         sendJson(res, 200, { ok: true, files: saved });
       }).catch(e => {
         sendJson(res, 500, { error: e.message });
@@ -195,6 +251,7 @@ const server = http.createServer((req, res) => {
       const filePath = path.join(UPLOADS_DIR, fileName);
       if (fs.existsSync(filePath)) {
         fs.unlinkSync(filePath);
+        quickRebuildAfterUpload();
         sendJson(res, 200, { ok: true });
       } else {
         sendJson(res, 404, { error: 'File not found' });
