@@ -411,10 +411,16 @@ function buildGrid(coll, active) {
   coll.items.forEach(it => {
     const card = document.createElement("div");
     card.className = "card";
-    const thumb = it.img
-      ? '<img class="thumb" loading="lazy" data-src="https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000" alt="' + it.title + '">'
+    var imgSrc = '';
+    if (it.img) {
+      imgSrc = it.img.indexOf('/') !== -1
+        ? it.img
+        : 'https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000';
+    }
+    var thumb = imgSrc
+      ? '<img class="thumb" loading="lazy" data-src="' + imgSrc + '" alt="' + it.title + '">'
       : '<div class="thumb placeholder">' + it.title + '</div>';
-    const href = it.link || 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t';
+    var href = it.link || (it.zip ? 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t' : '');
     card.setAttribute('data-href', href);
     if (it.link) card.setAttribute('data-external', '1');
     card.onclick = function() { openLink(this); };

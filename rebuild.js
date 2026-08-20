@@ -14,6 +14,7 @@ const CONFIG_PATH = path.join(BASE_DIR, 'colecoes.json');
 const TPL_PATH = path.join(BASE_DIR, 'page_template.html');
 const OUT_PATH = path.join(BASE_DIR, 'index.html');
 const SNAP_PATH = path.join(CACHE_DIR, 'snapshot.json');
+const UPLOADS_DIR = path.join(BASE_DIR, 'uploads');
 
 const REFRESH = process.argv.includes('--refresh');
 
@@ -413,6 +414,36 @@ async function main() {
         }
       }
     }
+  }
+
+  // ── add uploaded files to every tab as extra items ──
+  const uploadItems = [];
+  if (fs.existsSync(UPLOADS_DIR)) {
+    const extMap = { '.jpg': 'image', '.jpeg': 'image', '.png': 'image', '.gif': 'image', '.webp': 'image', '.bmp': 'image', '.svg': 'image', '.stl': 'model', '.obj': 'model', '.zip': 'archive', '.rar': 'archive', '.7z': 'archive' };
+    const thumbExt = { '.jpg': 1, '.jpeg': 1, '.png': 1, '.gif': 1, '.webp': 1, '.bmp': 1, '.svg': 1 };
+    const uploadFiles = fs.readdirSync(UPLOADS_DIR);
+    for (const f of uploadFiles) {
+      if (f === '.gitkeep') continue;
+      const ext = path.extname(f).toLowerCase();
+      const name = path.basename(f, ext).replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+      const encName = encodeURIComponent(f);
+      if (thumbExt[ext]) {
+        uploadItems.push({ title: name, sub: 'Arquivo local', img: '/uploads/' + encName, zip: '', link: '/uploads/' + encName, label: 'Abrir' });
+      } else {
+        uploadItems.push({ title: name, sub: (extMap[ext] || 'Arquivo') + ' local', img: '', zip: '', link: '/uploads/' + encName, label: 'Baixar' });
+      }
+    }
+  }
+
+  // inject uploads into each tab block
+  if (uploadItems.length > 0) {
+    for (const b of blocks) {
+      if (b.updates) continue;
+      if (b.raw) continue;
+      b.items.push(...uploadItems);
+    }
+    updatesItems.push(...uploadItems.map(it => ({ ...it, sub: it.sub + ' - ' + today, date: today })));
+    log('UPLOADS: ' + uploadItems.length + ' files added to all tabs');
   }
 
   // sort updates

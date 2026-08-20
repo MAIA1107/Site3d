@@ -72,7 +72,7 @@ function sendJson(res, status, obj) {
 }
 
 function serveFile(res, filePath) {
-  fs.readFile(filePath, 'utf-8', (err, data) => {
+  fs.readFile(filePath, (err, data) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('404 Not Found');
@@ -89,9 +89,15 @@ function serveFile(res, filePath) {
       '.jpeg': 'image/jpeg',
       '.gif': 'image/gif',
       '.svg': 'image/svg+xml',
+      '.webp': 'image/webp',
       '.ico': 'image/x-icon',
       '.woff': 'font/woff',
       '.woff2': 'font/woff2',
+      '.stl': 'model/stl',
+      '.obj': 'model/obj',
+      '.zip': 'application/zip',
+      '.rar': 'application/vnd.rar',
+      '.7z': 'application/x-7z-compressed',
     };
     const contentType = mimeTypes[ext] || 'application/octet-stream';
     res.writeHead(200, { 'Content-Type': contentType });
