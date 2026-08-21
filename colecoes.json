@@ -2425,10 +2425,42 @@
                      "name":  "Brinquedos",
                      "type":  "drive"
                  },
-                 {
-                     "name":  "2026",
-                     "file":  "tab_2026.js",
-                     "type":  "static"
-                 }
+                  {
+                      "name":  "2026",
+                      "file":  "tab_2026.js",
+                      "type":  "static"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1Nm88DufMOS3XPtEwU1BW3DiMYjVISgdD"
+                                ],
+                      "name":  "Estádios",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/187M6Mgh24dGzWykaeEejhUs0PWBkZLhf"
+                                ],
+                      "name":  "Disney",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1ntT3znm4H58fnTX_g-qXznywaMeD0T6s"
+                                ],
+                      "name":  "DC",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1d0BLr5rnj8oS2omBHAc6gyKw90fgW9eH"
+                                ],
+                      "name":  "Desenhos Animados",
+                      "type":  "drive"
+                  }
              ]
 }
