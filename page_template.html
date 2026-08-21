@@ -14,29 +14,57 @@
     display: flex;
     flex-direction: column;
   }
-  header { text-align: center; padding: 32px 16px 8px; }
-  header h1 { font-size: 28px; color: #202124; }
-  header p { color: #5f6368; margin-top: 6px; }
-  .tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px;
+  header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px 8px; }
+  header h1 { font-size: 24px; color: #202124; }
+  header .subtitle { color: #5f6368; font-size: 13px; margin-top: 2px; }
+  .hamburger {
+    position: fixed; top: 16px; left: 16px; z-index: 2000;
+    width: 40px; height: 40px;
+    background: #fff; border: 1px solid #dadce0; border-radius: 10px;
+    cursor: pointer; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: background .15s;
   }
-  .tab {
-    border: none;
-    background: #e8eaed;
-    color: #3c4043;
-    padding: 9px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background .15s, color .15s;
+  .hamburger:hover { background: #f1f3f4; }
+  .hamburger span { display: block; width: 18px; height: 2px; background: #3c4043; border-radius: 1px; }
+  .sidebar-overlay {
+    display: none; position: fixed; inset: 0; z-index: 1500;
+    background: rgba(0,0,0,.35);
   }
-  .tab:hover { background: #dadce0; }
-  .tab.active { background: #1a73e8; color: #fff; }
-  main { flex: 1; padding: 8px 16px 32px; }
+  .sidebar-overlay.open { display: block; }
+  .sidebar {
+    position: fixed; top: 0; left: -280px; z-index: 1600;
+    width: 280px; height: 100vh;
+    background: #fff; box-shadow: 4px 0 16px rgba(0,0,0,.15);
+    transition: left .25s ease; overflow-y: auto;
+    padding: 60px 0 20px;
+  }
+  .sidebar.open { left: 0; }
+  .sidebar-title {
+    padding: 0 20px 12px; font-size: 13px; font-weight: 600;
+    color: #5f6368; text-transform: uppercase; letter-spacing: .5px;
+    border-bottom: 1px solid #e8eaed; margin-bottom: 4px;
+  }
+  .sidebar-item {
+    display: block; width: 100%; text-align: left;
+    padding: 12px 20px; border: none; background: none;
+    font-size: 15px; color: #3c4043; cursor: pointer;
+    transition: background .12s;
+  }
+  .sidebar-item:hover { background: #f1f3f4; }
+  .sidebar-item.active { background: #e8f0fe; color: #1a73e8; font-weight: 600; }
+  .view-toggle {
+    display: flex; gap: 4px; background: #e8eaed; border-radius: 8px; padding: 3px;
+  }
+  .view-btn {
+    border: none; background: transparent; cursor: pointer;
+    padding: 6px 10px; border-radius: 6px; font-size: 13px;
+    color: #5f6368; transition: all .15s; display: flex; align-items: center; gap: 4px;
+  }
+  .view-btn.active { background: #fff; color: #202124; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+  .view-btn svg { width: 16px; height: 16px; }
+  main { flex: 1; padding: 8px 24px 32px; }
   .grid {
     display: none;
     max-width: 1200px;
@@ -45,6 +73,10 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
   .grid.active { display: grid; }
+  .grid.list-view {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
   .card {
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -57,12 +89,21 @@
     transition: box-shadow .15s, transform .15s;
   }
   .card:hover { box-shadow: 0 4px 12px rgba(60,64,67,.2); transform: translateY(-2px); }
+  .grid.list-view .card {
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .grid.list-view .card:hover { transform: translateY(-1px); }
   .thumb {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     background: #e8eaed;
     display: block;
+  }
+  .grid.list-view .thumb {
+    width: 80px; min-height: 80px;
+    aspect-ratio: auto;
   }
   .thumb.placeholder {
     display: flex;
@@ -84,9 +125,7 @@
   }
   .card-title { font-weight: 600; font-size: 14px; line-height: 1.3; }
   .card-sub { color: #5f6368; font-size: 12px; }
-  .btn {
-    display: none;
-  }
+  .btn { display: none; }
   .footer { text-align: center; color: #5f6368; font-size: 12px; padding: 30px 0 10px; }
   .config-panel {
     display: none;
@@ -310,31 +349,30 @@
     margin-top: 12px;
     padding: 10px 16px;
     border-radius: 8px;
+    font-size: 13px;
     background: #e8f0fe;
     color: #1a73e8;
-    font-size: 13px;
-    font-family: monospace;
+    display: none;
   }
-  .uploaded-files {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 12px;
-  }
+  .uploaded-files { margin-top: 12px; }
   .uploaded-file {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 12px;
-    background: #fff;
-    border: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    border: 1px solid #e8eaed;
     border-radius: 8px;
-    font-size: 13px;
+    margin-bottom: 6px;
+    background: #fff;
   }
   .uploaded-file .file-name { flex: 1; color: #202124; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .uploaded-file .file-size { color: #5f6368; font-size: 12px; }
   .uploaded-file .btn-del {
-    border: none; background: none; color: #d93025; cursor: pointer; font-size: 16px; padding: 2px 6px; border-radius: 4px;
+    border: none; background: #fce8e6; color: #d93025;
+    width: 26px; height: 26px; border-radius: 50%;
+    cursor: pointer; font-size: 12px; display: flex;
+    align-items: center; justify-content: center; flex-shrink: 0;
+    transition: background .15s;
   }
   .uploaded-file .btn-del:hover { background: #fce8e6; }
   .link-row.duplicate { background: #fce8e6; border-radius: 8px; padding: 4px 8px; margin: -4px -8px; }
@@ -360,6 +398,14 @@
     border-radius: 4px; transition: width .2s;
   }
   .loading-pct { margin-top: 10px; font-size: 13px; color: #5f6368; font-family: monospace; }
+  @media (max-width: 600px) {
+    .sidebar { width: 260px; }
+    header { padding: 12px 16px 8px; }
+    header h1 { font-size: 20px; }
+    main { padding: 8px 12px 24px; }
+    .grid { gap: 10px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .grid.list-view .thumb { width: 60px; min-height: 60px; }
+  }
 </style>
 </head>
 <body>
@@ -369,12 +415,32 @@
   <div class="loading-bar-track"><div class="loading-bar-fill" id="loading-bar"></div></div>
   <div class="loading-pct" id="loading-pct">0%</div>
 </div>
+
+<button class="hamburger" id="hamburger-btn" onclick="toggleSidebar()">
+  <span></span><span></span><span></span>
+</button>
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-title">Categorias</div>
+</nav>
+
 <header>
-  <h1>Coleções 3D</h1>
-  <p>Modelos STL para impressão 3D &middot; clique na aba para ver a coleção</p>
+  <div>
+    <h1>Coleções 3D</h1>
+    <div class="subtitle">Modelos STL para impressão 3D</div>
+  </div>
+  <div class="view-toggle">
+    <button class="view-btn active" id="btn-grid" onclick="setViewMode('grid')" title="Miniaturas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Grade
+    </button>
+    <button class="view-btn" id="btn-list" onclick="setViewMode('list')" title="Lista">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Lista
+    </button>
+  </div>
 </header>
 
-<nav class="tabs" id="tabs"></nav>
 <main id="container"></main>
 
 <footer class="footer">Arquivos hospedados no Google Drive &middot; gerado automaticamente</footer>
@@ -392,24 +458,29 @@ setTimeout(function() {
 
 __COLLECTIONS__
 
+var currentTab = COLLECTIONS.length > 0 ? COLLECTIONS[0].name : '';
+var viewMode = localStorage.getItem('viewMode') || 'grid';
+var container = document.getElementById("container");
+var sidebar = document.getElementById("sidebar");
+var sidebarOverlay = document.getElementById("sidebar-overlay");
 
-const tabsEl = document.getElementById("tabs");
-const container = document.getElementById("container");
-
-function buildTab(name, active) {
-  const b = document.createElement("button");
-  b.className = "tab" + (active ? " active" : "");
-  b.textContent = name;
-  b.addEventListener("click", () => selectTab(name));
-  return b;
-}
+COLLECTIONS.forEach(function(c, i) {
+  var item = document.createElement("button");
+  item.className = "sidebar-item" + (i === 0 ? " active" : "");
+  item.textContent = c.name;
+  item.setAttribute("data-tab", c.name);
+  item.addEventListener("click", function() { selectTab(c.name); });
+  sidebar.appendChild(item);
+  container.appendChild(buildGrid(c, i === 0));
+});
 
 function buildGrid(coll, active) {
-  const g = document.createElement("div");
+  var g = document.createElement("div");
   g.className = "grid" + (active ? " active" : "");
+  if (viewMode === 'list') g.classList.add("list-view");
   g.id = "grid-" + coll.name;
-  coll.items.forEach(it => {
-    const card = document.createElement("div");
+  coll.items.forEach(function(it) {
+    var card = document.createElement("div");
     card.className = "card";
     var imgSrc = '';
     if (it.img) {
@@ -445,29 +516,55 @@ function openLink(a) {
   else window.location.href = h;
 }
 
-COLLECTIONS.forEach((c, i) => {
-  tabsEl.appendChild(buildTab(c.name, i === 0));
-  container.appendChild(buildGrid(c, i === 0));
-});
-
 function selectTab(name) {
-  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.textContent === name));
-  document.querySelectorAll(".grid").forEach(g => g.classList.toggle("active", g.id === "grid-" + name));
-  const cp = document.getElementById("config-panel");
+  currentTab = name;
+  document.querySelectorAll(".sidebar-item").forEach(function(t) {
+    t.classList.toggle("active", t.getAttribute("data-tab") === name);
+  });
+  document.querySelectorAll(".grid").forEach(function(g) {
+    g.classList.toggle("active", g.id === "grid-" + name);
+  });
+  var cp = document.getElementById("config-panel");
   if (cp) {
     cp.style.display = (name === "Configurações") ? "block" : "none";
     if (name === "Configurações" && !cp.dataset.loaded && window.__SERVER__) loadConfig();
   }
+  var g = document.getElementById("grid-" + name);
+  if (g) _loadVisibleImages(g);
+  closeSidebar();
 }
 
-(function() {
-  const configBtn = document.createElement("button");
-  configBtn.className = "tab";
-  configBtn.textContent = "Configurações";
-  configBtn.addEventListener("click", () => selectTab("Configurações"));
-  tabsEl.appendChild(configBtn);
+function toggleSidebar() {
+  sidebar.classList.toggle("open");
+  sidebarOverlay.classList.toggle("open");
+}
 
-  const configPanel = document.createElement("div");
+function closeSidebar() {
+  sidebar.classList.remove("open");
+  sidebarOverlay.classList.remove("open");
+}
+
+function setViewMode(mode) {
+  viewMode = mode;
+  localStorage.setItem('viewMode', mode);
+  document.getElementById("btn-grid").classList.toggle("active", mode === "grid");
+  document.getElementById("btn-list").classList.toggle("active", mode === "list");
+  document.querySelectorAll(".grid").forEach(function(g) {
+    g.classList.toggle("list-view", mode === "list");
+  });
+}
+
+setViewMode(viewMode);
+
+(function() {
+  var configBtn = document.createElement("button");
+  configBtn.className = "sidebar-item";
+  configBtn.textContent = "Configurações";
+  configBtn.setAttribute("data-tab", "Configurações");
+  configBtn.addEventListener("click", function() { selectTab("Configurações"); });
+  sidebar.appendChild(configBtn);
+
+  var configPanel = document.createElement("div");
   configPanel.id = "config-panel";
   configPanel.className = "config-panel";
   configPanel.style.display = "none";
@@ -499,37 +596,30 @@ function _loadVisibleImages(grid) {
 var _activeGrid = document.querySelector(".grid.active");
 if (_activeGrid) _loadVisibleImages(_activeGrid);
 
-var _origSelectTab = selectTab;
-selectTab = function(name) {
-  _origSelectTab(name);
-  var g = document.getElementById("grid-" + name);
-  if (g) _loadVisibleImages(g);
-};
-
 let configData = null;
 
 function loadConfig() {
-  const panel = document.getElementById("config-panel");
+  var panel = document.getElementById("config-panel");
   if (!window.__SERVER__) {
     panel.innerHTML = '<div class="config-status error">Execute: node sistema/server.js</div>';
     return;
   }
   panel.innerHTML = '<div class="config-status loading">Carregando configurações...</div>';
   fetch("/api/config")
-    .then(r => r.json())
-    .then(data => {
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
       configData = data;
       panel.dataset.loaded = "1";
       renderConfigPanel(data);
     })
-    .catch(e => {
+    .catch(function(e) {
       panel.innerHTML = '<div class="config-status error">Erro ao carregar: ' + e.message + '</div>';
     });
 }
 
 function renderConfigPanel(data) {
-  const panel = document.getElementById("config-panel");
-  let html = '<div class="config-header">' +
+  var panel = document.getElementById("config-panel");
+  var html = '<div class="config-header">' +
     '<h2 style="font-size:22px;margin:0">Configurações</h2>' +
     '<div class="config-actions">' +
       '<button class="btn-save" onclick="saveConfig()">Salvar</button>' +
@@ -555,28 +645,28 @@ function renderConfigPanel(data) {
   '<div class="config-status" id="config-status"></div>';
   panel.innerHTML = html;
 
-  const cardsContainer = document.getElementById("config-cards");
-  (data.tabs || []).forEach(tab => cardsContainer.appendChild(buildConfigCard(tab)));
+  var cardsContainer = document.getElementById("config-cards");
+  (data.tabs || []).forEach(function(tab) { cardsContainer.appendChild(buildConfigCard(tab)); });
   loadUploadedFiles();
 }
 
 function buildConfigCard(tab) {
-  const card = document.createElement("div");
+  var card = document.createElement("div");
   card.className = "config-tab-card";
 
-  const type = tab.type || "drive";
-  const expand = !!tab.expand;
+  var type = tab.type || "drive";
+  var expand = !!tab.expand;
 
-  let typeOptions = '<option value="drive"' + (type === "drive" ? " selected" : "") + '>drive</option>' +
+  var typeOptions = '<option value="drive"' + (type === "drive" ? " selected" : "") + '>drive</option>' +
     '<option value="static"' + (type === "static" ? " selected" : "") + '>static</option>' +
     '<option value="updates"' + (type === "updates" ? " selected" : "") + '>updates</option>';
 
-  let fieldsHtml = "";
+  var fieldsHtml = "";
   if (type === "drive") {
     if (expand) {
-      const links = Array.isArray(tab.links) ? tab.links : [];
+      var links = Array.isArray(tab.links) ? tab.links : [];
       fieldsHtml += '<div class="links-list">';
-      links.forEach(url => {
+      links.forEach(function(url) {
         fieldsHtml += '<div class="link-row">' +
           '<input placeholder="URL" data-field="url" value="' + escapeAttr(url) + '" oninput="checkDup(this)" />' +
           '<button class="btn-remove-link" onclick="removeLink(this)">X</button>' +
@@ -585,11 +675,11 @@ function buildConfigCard(tab) {
       fieldsHtml += '</div>';
       fieldsHtml += '<button class="btn-add-link" onclick="addLink(this)">+ Link</button>';
     } else {
-      const links = Array.isArray(tab.links) ? tab.links : [];
+      var links2 = Array.isArray(tab.links) ? tab.links : [];
       fieldsHtml += '<div class="links-list">';
-      links.forEach(link => {
-        const url = typeof link === "string" ? link : (link.url || "");
-        const label = typeof link === "object" ? (link.label || "") : "";
+      links2.forEach(function(link) {
+        var url = typeof link === "string" ? link : (link.url || "");
+        var label = typeof link === "object" ? (link.label || "") : "";
         fieldsHtml += '<div class="link-row">' +
           '<input placeholder="URL" data-field="url" value="' + escapeAttr(url) + '" oninput="checkDup(this)" />' +
           '<input placeholder="Label" data-field="label" value="' + escapeAttr(label) + '" />' +
@@ -627,25 +717,25 @@ function escapeAttr(str) {
 }
 
 function onTypeChange(sel) {
-  const card = sel.closest(".config-tab-card");
-  const name = card.querySelector('[data-field="name"]').value;
-  const expand = card.querySelector('[data-field="expand"]');
-  const tab = { name: name, type: sel.value, expand: expand ? expand.checked : false };
-  const newCard = buildConfigCard(tab);
+  var card = sel.closest(".config-tab-card");
+  var name = card.querySelector('[data-field="name"]').value;
+  var expand = card.querySelector('[data-field="expand"]');
+  var tab = { name: name, type: sel.value, expand: expand ? expand.checked : false };
+  var newCard = buildConfigCard(tab);
   card.replaceWith(newCard);
 }
 
 function onExpandChange(cb) {
-  const card = cb.closest(".config-tab-card");
-  const name = card.querySelector('[data-field="name"]').value;
-  const type = card.querySelector('[data-field="type"]').value;
-  const tab = { name: name, type: type, expand: cb.checked };
-  const newCard = buildConfigCard(tab);
+  var card = cb.closest(".config-tab-card");
+  var name = card.querySelector('[data-field="name"]').value;
+  var type = card.querySelector('[data-field="type"]').value;
+  var tab = { name: name, type: type, expand: cb.checked };
+  var newCard = buildConfigCard(tab);
   card.replaceWith(newCard);
 }
 
 function addTab() {
-  const cardsContainer = document.getElementById("config-cards");
+  var cardsContainer = document.getElementById("config-cards");
   cardsContainer.appendChild(buildConfigCard({ name: "Nova Aba", type: "drive", expand: false, links: [] }));
 }
 
@@ -654,11 +744,11 @@ function removeTab(btn) {
 }
 
 function addLink(btn) {
-  const card = btn.closest(".config-tab-card");
-  const isExpand = card.querySelector('[data-field="expand"]');
-  const expandChecked = isExpand && isExpand.checked;
-  const linksList = btn.previousElementSibling;
-  const row = document.createElement("div");
+  var card = btn.closest(".config-tab-card");
+  var isExpand = card.querySelector('[data-field="expand"]');
+  var expandChecked = isExpand && isExpand.checked;
+  var linksList = btn.previousElementSibling;
+  var row = document.createElement("div");
   row.className = "link-row";
   row.innerHTML = '<input placeholder="URL" data-field="url" value="" oninput="checkDup(this)" />' +
     (!expandChecked ? '<input placeholder="Label" data-field="label" value="" />' : '') +
@@ -668,20 +758,20 @@ function addLink(btn) {
 }
 
 function checkDup(input) {
-  const card = input.closest(".config-tab-card");
-  const url = input.value.trim();
+  var card = input.closest(".config-tab-card");
+  var url = input.value.trim();
   if (!url) {
     input.closest(".link-row").classList.remove("duplicate");
     var oldHint = input.closest(".link-row").querySelector(".dup-hint");
     if (oldHint) oldHint.remove();
     return;
   }
-  const allInputs = card.querySelectorAll('[data-field="url"]');
+  var allInputs = card.querySelectorAll('[data-field="url"]');
   var count = 0;
   allInputs.forEach(function(inp) {
     if (inp.value.trim() === url) count++;
   });
-  const row = input.closest(".link-row");
+  var row = input.closest(".link-row");
   var hint = row.querySelector(".dup-hint");
   if (count > 1) {
     row.classList.add("duplicate");
@@ -702,38 +792,38 @@ function removeLink(btn) {
 }
 
 function collectConfigData() {
-  const cards = document.querySelectorAll(".config-tab-card");
-  const tabs = [];
-  let totalDups = 0;
-  cards.forEach(card => {
-    const name = card.querySelector('[data-field="name"]').value;
-    const type = card.querySelector('[data-field="type"]').value;
-    const expandEl = card.querySelector('[data-field="expand"]');
-    const expand = expandEl ? expandEl.checked : false;
-    const tab = { name: name, type: type };
+  var cards = document.querySelectorAll(".config-tab-card");
+  var tabs = [];
+  var totalDups = 0;
+  cards.forEach(function(card) {
+    var name = card.querySelector('[data-field="name"]').value;
+    var type = card.querySelector('[data-field="type"]').value;
+    var expandEl = card.querySelector('[data-field="expand"]');
+    var expand = expandEl ? expandEl.checked : false;
+    var tab = { name: name, type: type };
     if (type === "drive") {
       tab.expand = expand;
-      const linkRows = card.querySelectorAll(".link-row");
-      const links = [];
-      const seen = {};
-      linkRows.forEach(row => {
-        const url = row.querySelector('[data-field="url"]').value.trim();
+      var linkRows = card.querySelectorAll(".link-row");
+      var links = [];
+      var seen = {};
+      linkRows.forEach(function(row) {
+        var url = row.querySelector('[data-field="url"]').value.trim();
         if (!url) return;
         if (seen[url]) { totalDups++; return; }
         seen[url] = true;
         if (expand) {
           links.push(url);
         } else {
-          const label = row.querySelector('[data-field="label"]').value;
+          var label = row.querySelector('[data-field="label"]').value;
           links.push({ url: url, label: label });
         }
       });
       tab.links = links;
     } else if (type === "static") {
-      const fileEl = card.querySelector('[data-field="file"]');
+      var fileEl = card.querySelector('[data-field="file"]');
       tab.file = fileEl ? fileEl.value : "";
     } else if (type === "updates") {
-      const maxEl = card.querySelector('[data-field="max"]');
+      var maxEl = card.querySelector('[data-field="max"]');
       tab.max = maxEl ? parseInt(maxEl.value, 10) || 80 : 80;
     }
     tabs.push(tab);
@@ -743,7 +833,7 @@ function collectConfigData() {
 }
 
 function showStatus(msg, type) {
-  const el = document.getElementById("config-status");
+  var el = document.getElementById("config-status");
   if (!el) return;
   el.className = "config-status " + type;
   el.textContent = msg;
@@ -751,36 +841,36 @@ function showStatus(msg, type) {
 }
 
 function saveConfig() {
-  const data = collectConfigData();
+  var data = collectConfigData();
   showStatus("Salvando...", "loading");
   fetch("/api/config", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
   })
-    .then(r => r.json())
-    .then(() => showStatus("Configurações salvas com sucesso!", "success"))
-    .catch(e => showStatus("Erro ao salvar: " + e.message, "error"));
+    .then(function(r) { return r.json(); })
+    .then(function() { showStatus("Configurações salvas com sucesso!", "success"); })
+    .catch(function(e) { showStatus("Erro ao salvar: " + e.message, "error"); });
 }
 
 function rebuildPage() {
-  const btn = document.getElementById("btn-rebuild");
+  var btn = document.getElementById("btn-rebuild");
   if (btn) { btn.classList.add("running"); btn.disabled = true; }
   showStatus("Iniciando rebuild...", "loading");
   fetch("/api/rebuild", { method: "POST" })
-    .then(() => pollRebuildStatus())
-    .catch(e => { showStatus("Erro ao iniciar rebuild: " + e.message, "error"); if (btn) { btn.classList.remove("running"); btn.disabled = false; } });
+    .then(function() { pollRebuildStatus(); })
+    .catch(function(e) { showStatus("Erro ao iniciar rebuild: " + e.message, "error"); if (btn) { btn.classList.remove("running"); btn.disabled = false; } });
 }
 
 function pollRebuildStatus() {
-  const btn = document.getElementById("btn-rebuild");
-  const poll = setInterval(() => {
+  var btn = document.getElementById("btn-rebuild");
+  var poll = setInterval(function() {
     fetch("/api/status")
-      .then(r => r.json())
-      .then(data => {
-        const status = document.getElementById("config-status");
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var status = document.getElementById("config-status");
         if (status && data.output) {
-          const lines = Array.isArray(data.output) ? data.output.slice(-8) : String(data.output).split("\n").slice(-8);
+          var lines = Array.isArray(data.output) ? data.output.slice(-8) : String(data.output).split("\n").slice(-8);
           status.className = "config-status loading";
           status.textContent = lines.join("\n");
           status.style.display = "block";
@@ -789,10 +879,10 @@ function pollRebuildStatus() {
           clearInterval(poll);
           showStatus("Concluido!", "success");
           if (btn) { btn.classList.remove("running"); btn.disabled = false; }
-          setTimeout(() => location.reload(), 2000);
+          setTimeout(function() { location.reload(); }, 2000);
         }
       })
-      .catch(() => {});
+      .catch(function() {});
   }, 2000);
 }
 
@@ -857,13 +947,13 @@ function uploadFiles(files) {
 }
 
 function loadUploadedFiles() {
-  var container = document.getElementById("uploaded-files");
-  if (!container) return;
+  var fileContainer = document.getElementById("uploaded-files");
+  if (!fileContainer) return;
   fetch("/api/uploads")
     .then(function(r) { return r.json(); })
     .then(function(files) {
       if (!files || files.length === 0) {
-        container.innerHTML = '<p style="color:#9aa0a6;font-size:13px">Nenhum arquivo enviado ainda.</p>';
+        fileContainer.innerHTML = '<p style="color:#9aa0a6;font-size:13px">Nenhum arquivo enviado ainda.</p>';
         return;
       }
       var html = '';
@@ -875,10 +965,10 @@ function loadUploadedFiles() {
           '<button class="btn-del" onclick="deleteUpload(\'' + escapeAttr(f.name) + '\')" title="Excluir">&#10005;</button>' +
         '</div>';
       });
-      container.innerHTML = html;
+      fileContainer.innerHTML = html;
     })
     .catch(function() {
-      container.innerHTML = '<p style="color:#d93025;font-size:13px">Erro ao carregar arquivos.</p>';
+      fileContainer.innerHTML = '<p style="color:#d93025;font-size:13px">Erro ao carregar arquivos.</p>';
     });
 }
 
