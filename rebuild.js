@@ -276,10 +276,16 @@ function buildItems(folders) {
   for (const f of folders) {
     const imgs = f.items.filter(i => i.mime === 'image');
     const zips = f.items.filter(i => i.mime === 'archive');
+    const stls = f.items.filter(i => i.name && /\.(stl|obj|3mf)$/i.test(i.name));
 
-    if (zips.length === 0) {
+    if (zips.length === 0 && stls.length === 0) {
       const img = imgs.length > 0 ? imgs[0].id : '';
       out.push({ title: f.label, sub: 'Pasta (vários arquivos)', img, zip: '', link: 'https://drive.google.com/drive/folders/' + f.id, label: 'Abrir no Drive' });
+    } else if (stls.length > 0 && zips.length === 0) {
+      for (const s of stls) {
+        const name = s.name.replace(/\.(stl|obj|3mf)$/i, '');
+        out.push({ title: name, sub: f.label, img: '', zip: '', link: 'https://drive.usercontent.google.com/download?id=' + s.id + '&export=download&confirm=t', label: 'Baixar' });
+      }
     } else if (zips.length === 1) {
       const img = imgs.length > 0 ? imgs[0].id : '';
       out.push({ title: f.label, sub: f.label, img, zip: zips[0].id, link: '', label: 'Baixar ZIP' });
