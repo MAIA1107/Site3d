@@ -1,4 +1,4 @@
-const COLLECTIONS = [
+var COLLECTIONS = [
   {
     name: "Atualizações",
     items: [

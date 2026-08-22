@@ -405,10 +405,83 @@
     main { padding: 8px 12px 24px; }
     .grid { gap: 10px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     .grid.list-view .thumb { width: 60px; min-height: 60px; }
+    .landing-title { font-size: 48px !important; }
   }
+
+  /* Landing page */
+  .landing {
+    position: fixed; inset: 0; z-index: 9999;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    cursor: pointer; transition: opacity .6s ease, visibility .6s ease;
+  }
+  .landing.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  .landing-title {
+    font-size: 80px; font-weight: 900;
+    color: transparent;
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5, #00d2ff);
+    -webkit-background-clip: text; background-clip: text;
+    text-shadow: none;
+    letter-spacing: 4px;
+    animation: float3d 3s ease-in-out infinite;
+    text-align: center; line-height: 1.1;
+    filter: drop-shadow(0 8px 32px rgba(58,123,213,.5));
+  }
+  .landing-sub {
+    font-size: 18px; color: rgba(255,255,255,.5);
+    margin-top: 24px; letter-spacing: 6px; text-transform: uppercase;
+    animation: fadeInUp .8s ease .3s both;
+  }
+  .landing-hint {
+    position: absolute; bottom: 40px;
+    font-size: 14px; color: rgba(255,255,255,.3);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes float3d {
+    0%, 100% { transform: perspective(500px) rotateX(5deg) translateY(0); }
+    50% { transform: perspective(500px) rotateX(-5deg) translateY(-10px); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: .3; }
+    50% { opacity: .7; }
+  }
+
+  /* Search */
+  .search-box {
+    display: none; width: 100%; max-width: 500px;
+    margin: 0 auto; position: relative;
+  }
+  .search-box.visible { display: block; }
+  .search-input {
+    width: 100%; padding: 12px 16px 12px 42px;
+    border: 2px solid #dadce0; border-radius: 12px;
+    font-size: 16px; background: #fff; outline: none;
+    transition: border-color .2s;
+  }
+  .search-input:focus { border-color: #1a73e8; }
+  .search-icon {
+    position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    color: #9aa0a6; font-size: 18px; pointer-events: none;
+  }
+  .search-results-info {
+    text-align: center; padding: 8px 0; font-size: 13px; color: #5f6368;
+    display: none;
+  }
+  .search-results-info.visible { display: block; }
 </style>
 </head>
 <body>
+<div class="landing" id="landing" onclick="dismissLanding()">
+  <div class="landing-title">ARQUIVOS<br>3D</div>
+  <div class="landing-sub">Modelos para impressão 3D</div>
+  <div class="landing-hint">Clique para entrar</div>
+</div>
+
 <div class="loading-overlay" id="loading-overlay">
   <h2>Carregando colecoes...</h2>
   <p>Aguarde enquanto os dados sao carregados</p>
@@ -440,6 +513,12 @@
     </button>
   </div>
 </header>
+
+<div class="search-box" id="search-box">
+  <span class="search-icon">&#128269;</span>
+  <input class="search-input" id="search-input" type="text" placeholder="Pesquisar por nome..." oninput="handleSearch(this.value)">
+</div>
+<div class="search-results-info" id="search-results-info"></div>
 
 <main id="container"></main>
 
@@ -529,6 +608,23 @@ function selectTab(name) {
     cp.style.display = (name === "Configurações") ? "block" : "none";
     if (name === "Configurações" && !cp.dataset.loaded && window.__SERVER__) loadConfig();
   }
+  var searchBox = document.getElementById("search-box");
+  var searchInfo = document.getElementById("search-results-info");
+  if (name === "Pesquisa") {
+    if (searchBox) searchBox.classList.add("visible");
+    document.querySelectorAll(".grid").forEach(function(g) { g.classList.remove("active"); });
+    var searchGrid = document.getElementById("grid-Pesquisa");
+    if (searchGrid) searchGrid.classList.add("active");
+    var si = document.getElementById("search-input");
+    if (si) si.focus();
+  } else {
+    if (searchBox) searchBox.classList.remove("visible");
+    if (searchInfo) searchInfo.classList.remove("visible");
+    var searchGrid = document.getElementById("grid-Pesquisa");
+    if (searchGrid) searchGrid.classList.remove("active");
+    var si = document.getElementById("search-input");
+    if (si) { si.value = ''; handleSearch(''); }
+  }
   var g = document.getElementById("grid-" + name);
   if (g) _loadVisibleImages(g);
   closeSidebar();
@@ -557,6 +653,13 @@ function setViewMode(mode) {
 setViewMode(viewMode);
 
 (function() {
+  var searchBtn = document.createElement("button");
+  searchBtn.className = "sidebar-item";
+  searchBtn.textContent = "Pesquisa";
+  searchBtn.setAttribute("data-tab", "Pesquisa");
+  searchBtn.addEventListener("click", function() { selectTab("Pesquisa"); });
+  sidebar.appendChild(searchBtn);
+
   var configBtn = document.createElement("button");
   configBtn.className = "sidebar-item";
   configBtn.textContent = "Configurações";
@@ -979,6 +1082,87 @@ function deleteUpload(name) {
     .then(function() { loadUploadedFiles(); })
     .catch(function() { alert("Erro ao excluir"); });
 }
+
+function dismissLanding() {
+  var l = document.getElementById("landing");
+  if (l) l.classList.add("hidden");
+}
+
+var _allItems = [];
+COLLECTIONS.forEach(function(c) {
+  c.items.forEach(function(it) {
+    _allItems.push({ title: it.title, sub: it.sub || '', link: it.link || '', img: it.img || '', tab: c.name });
+  });
+});
+
+function handleSearch(q) {
+  q = q.toLowerCase().trim();
+  var info = document.getElementById("search-results-info");
+  var container = document.getElementById("container");
+  var grids = container.querySelectorAll(".grid");
+
+  if (!q) {
+    grids.forEach(function(g) { g.style.display = ''; g.classList.remove("search-hidden"); });
+    if (info) { info.classList.remove("visible"); info.textContent = ''; }
+    selectTab(currentTab);
+    return;
+  }
+
+  grids.forEach(function(g) { g.style.display = 'none'; });
+
+  var searchGrid = document.getElementById("grid-Pesquisa");
+  if (!searchGrid) {
+    searchGrid = document.createElement("div");
+    searchGrid.className = "grid active";
+    if (viewMode === 'list') searchGrid.classList.add("list-view");
+    searchGrid.id = "grid-Pesquisa";
+    container.appendChild(searchGrid);
+  }
+  searchGrid.innerHTML = '';
+
+  var matches = _allItems.filter(function(it) {
+    return it.title.toLowerCase().indexOf(q) !== -1 || it.sub.toLowerCase().indexOf(q) !== -1;
+  });
+
+  matches.forEach(function(it) {
+    var card = document.createElement("div");
+    card.className = "card";
+    var imgSrc = '';
+    if (it.img) {
+      imgSrc = it.img.indexOf('/') !== -1
+        ? it.img
+        : 'https://drive.google.com/thumbnail?id=' + it.img + '&sz=w1000';
+    }
+    var thumb = imgSrc
+      ? '<img class="thumb" loading="lazy" src="' + imgSrc + '" alt="' + it.title + '">'
+      : '<div class="thumb placeholder">' + it.title + '</div>';
+    var href = it.link || (it.zip ? 'https://drive.usercontent.google.com/download?id=' + it.zip + '&export=download&confirm=t' : '');
+    card.setAttribute('data-href', href);
+    if (it.link) card.setAttribute('data-external', '1');
+    card.onclick = function() { openLink(this); };
+    card.innerHTML = thumb +
+      '<div class="card-body">' +
+        '<div>' +
+          '<div class="card-title">' + it.title + '</div>' +
+          '<div class="card-sub">' + (it.tab || '') + '</div>' +
+        '</div>' +
+      '</div>';
+    searchGrid.appendChild(card);
+  });
+
+  searchGrid.classList.add("active");
+  if (info) {
+    info.textContent = matches.length + " resultado(s) para \"" + q + "\"";
+    info.classList.add("visible");
+  }
+}
+
+document.getElementById("search-input").addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    this.value = '';
+    handleSearch('');
+  }
+});
 </script>
 </body>
 </html>
