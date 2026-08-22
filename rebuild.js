@@ -72,6 +72,21 @@ function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
+const CONCURRENCY = 5;
+
+async function parallelMap(items, fn) {
+  const results = [];
+  let i = 0;
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++;
+      results[idx] = await fn(items[idx]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, items.length) }, () => worker()));
+  return results;
+}
+
 // ── fetch HTML from Google Drive ──
 function fetchHtml(id) {
   const url = `https://drive.google.com/drive/folders/${id}`;
@@ -163,21 +178,25 @@ async function fetchFolderItems(id) {
   const subDirs = top.filter(i => i.mime === 'application/vnd.google-apps.folder');
   for (const i of top.filter(i => i.mime !== 'application/vnd.google-apps.folder')) all.push(i);
 
-  for (const sd of subDirs) {
+  const subResults = await parallelMap(subDirs, async (sd) => {
     const h2 = await fetchHtml(sd.id);
-    if (!h2) continue;
+    if (!h2) return [];
     const subAll = getItems(h2);
     const subSub = subAll.filter(i => i.mime === 'application/vnd.google-apps.folder');
-    for (const i of subAll.filter(i => i.mime !== 'application/vnd.google-apps.folder')) all.push(i);
+    const directItems = subAll.filter(i => i.mime !== 'application/vnd.google-apps.folder');
 
-    for (const ssd of subSub) {
-      const h3 = await fetchHtml(ssd.id);
-      if (!h3) continue;
-      for (const i of getItems(h3).filter(i => i.mime !== 'application/vnd.google-apps.folder')) all.push(i);
-      await sleep(80);
+    if (subSub.length > 0) {
+      const subSubResults = await parallelMap(subSub, async (ssd) => {
+        const h3 = await fetchHtml(ssd.id);
+        if (!h3) return [];
+        return getItems(h3).filter(i => i.mime !== 'application/vnd.google-apps.folder');
+      });
+      for (const sr of subSubResults) directItems.push(...sr);
     }
-    await sleep(80);
-  }
+    return directItems;
+  });
+
+  for (const sr of subResults) all.push(...sr);
   return all;
 }
 
@@ -203,12 +222,10 @@ async function expandRoot(url) {
   if (!h) return [];
   const root = getItems(h);
   const subs = root.filter(i => i.mime === 'application/vnd.google-apps.folder');
-  const out = [];
-  for (const s of subs) {
-    const expanded = await expandFolder(s.id, s.name, 0);
-    out.push(...expanded);
-  }
-  return out;
+  const results = await parallelMap(subs, async (s) => {
+    return await expandFolder(s.id, s.name, 0);
+  });
+  return results.flat();
 }
 
 async function expandFolder(id, label, depth) {
@@ -236,10 +253,10 @@ async function expandFolder(id, label, depth) {
     out.push(obj);
     await sleep(120);
   } else {
-    for (const s of subs) {
-      const expanded = await expandFolder(s.id, s.name, depth + 1);
-      out.push(...expanded);
-    }
+    const results = await parallelMap(subs, async (s) => {
+      return await expandFolder(s.id, s.name, depth + 1);
+    });
+    for (const r of results) out.push(...r);
   }
   return out;
 }
