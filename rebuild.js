@@ -222,6 +222,15 @@ async function expandRoot(url) {
   if (!h) return [];
   const root = getItems(h);
   const subs = root.filter(i => i.mime === 'application/vnd.google-apps.folder');
+  const direct = root.filter(i => i.mime !== 'application/vnd.google-apps.folder');
+
+  if (subs.length === 0 && direct.length > 0) {
+    const items = await fetchFolderItems(id);
+    const obj = { id, label: 'root', items };
+    fs.writeFileSync(path.join(FOLDERS_DIR, id + '.json'), JSON.stringify(obj), 'utf-8');
+    return [obj];
+  }
+
   const results = await parallelMap(subs, async (s) => {
     return await expandFolder(s.id, s.name, 0);
   });
