@@ -2493,6 +2493,22 @@
                                 ],
                       "name":  "NSFW",
                       "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1hZG57HIXgWVGOm5biMt7CI2ElUGpAYlm"
+                                ],
+                      "name":  "Home Tools",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1mYsSQFhfCb5-SBP0F-SaDGHY1arrNy1M"
+                                ],
+                      "name":  "Key Holders",
+                      "type":  "drive"
                   }
              ]
 }
