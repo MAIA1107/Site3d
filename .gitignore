@@ -1,6 +1,5 @@
 node_modules/
 uploads/*
 !uploads/.gitkeep
-cache/folders/
 rebuild.log
 start_rebuild.vbs
