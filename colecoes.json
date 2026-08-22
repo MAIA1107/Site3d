@@ -2461,6 +2461,38 @@
                                 ],
                       "name":  "Desenhos Animados",
                       "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1m5RkHJtlzZJu4-ZvVWgCn5VC0KXMoS9x"
+                                ],
+                      "name":  "Séries",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1BAb4907EoLc0ny85-9RvXgBtq9TCJ46b"
+                                ],
+                      "name":  "LINEAL Content",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/1vFmQxWbmu2XVlfblbm8m2JHWv8FUeWgJ"
+                                ],
+                      "name":  "LINEAL NSFW",
+                      "type":  "drive"
+                  },
+                  {
+                      "expand":  true,
+                      "links":  [
+                                    "https://drive.google.com/drive/folders/13uy3SmmeMSka0yiDp9b0odHfUSPEnjmN"
+                                ],
+                      "name":  "NSFW",
+                      "type":  "drive"
                   }
              ]
 }
